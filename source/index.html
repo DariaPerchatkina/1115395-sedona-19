@@ -25,15 +25,17 @@
         </ul>
       </div>
     </nav>
-    <a class="page-header__logo" href="">
+    <a class="page-header__logo">
       <img class="page-header__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Путешествие в Седону">
     </a>
   </header>
 
   <main class="page-main">
-    <img class="page-main__img" src="https://via.placeholder.com/150x150" alt="Приглашение в Седону">
-    <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-    <p class="page-main__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="page-main__block">
+      <img class="page-main__img" src="https://via.placeholder.com/150x150" alt="Приглашение в Седону">
+      <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="page-main__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
     <section class="advantages">
       <h2 class="visually-hidden">Блок преимуществ</h2>
       <ul class="advantages__list">
@@ -89,9 +91,37 @@
       <h3 class="sentence__title">Заинтересовались?</h3>
         <p class="sentence__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="sentence__button" type="button">Найти гостиницу</button>
-        <a class="sentence__link" href="#"></a>
+        <a class="sentence__link" href="map.html">
+          <span class="visually-hidden"> Карта </span>
+        </a>
     </section>
   </main>
+
+  <footer class="footer-main">
+    <div class="container">
+      <h3>#VISITSEDONA</h3>
+      <div class="footer-social">
+        <a class="footer-social__link">
+          <span class="visually-hidden">twitter</span>
+          <svg class="footer-social__link--svg" src="https://via.placeholder.com/150x150" width="150" height="150" alt="twitter"></svg>
+        </a>
+        <a class="footer-social__link">
+          <span class="visually-hidden">Facebook</span>
+          <svg class="footer-social__link--svg" src="https://via.placeholder.com/150x150" width="150" height="150" alt="facebook"></svg>
+        </a>
+        <a class="footer-social__link">
+          <span class="visually-hidden">YouTube</span>
+          <svg class="footer-social__link--svg" src="https://via.placeholder.com/150x150" width="150" height="150" alt="YouTube"></svg>
+        </a>
+      </div>
+      <div class="footer-sentence">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <p>Разработано</p>
+          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="htmlacademy">
+        </a>
+      </div>
+    </div>
+  </footer>
 
   </body>
 </html>
