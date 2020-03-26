@@ -7,7 +7,7 @@
   <body>
   <header class="main-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">addОткрыть меню </button>
+      <button class="main-nav__toggle" type="button">Открыть меню </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">главная</a>
@@ -25,6 +25,111 @@
     </nav>
     <a class="main-header__logo" href=""><img src="https://via.placeholder.com/150x150" alt="Путешествие в Седону"></a>
   </header>
+
+  <main class="page-inner">
+    <section class="page-inner__block">
+      <h1 class="visually-hidden">Фотографии и видео из Седоны</h1>
+      <img class="page-inner__img" src="https://via.placeholder.com/150x150" alt="Приглашение в Седону">
+      <h2 class="page-inner__title">Оставьте свой отзыв</h2>
+      <p class="page-inner__intro"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+
+    <form class="contest-form" action="https://echo.htmlacademy.ru/" aria-labelledby="form-p">
+    <fieldset class="contest-form__block">
+      <legend class="visually-hidden">Представьтесь:</legend>
+      <ul class="contest-form__list list">
+        <li class="contest-form__item">
+          <label class="contest-form__label contest-form__label--main" for="appointment-family">Имя:</label>
+          <input class="contest-form__input contest-form__input--main" id="appointment-family" type="text" name="family"
+            placeholder="Петр*">
+        </li>
+        <li class="contest-form__item">
+          <label class="contest-form__label contest-form__label--main" for="appointment-name">Фамилия:</label>
+          <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text" name="name"
+            placeholder="Иванов*">
+        </li>
+        <li class="contest-form__item">
+          <label class="contest-form__label contest-form__label--main" for="appointment-patronymic">Отчество:</label>
+          <input class="contest-form__input contest-form__input--main" id="appointment-patronymic" type="text" name="patronymic"
+            placeholder="Александрович">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="contest-form__block">
+      <legend class="visually-hidden">Контактная информация</legend>
+      <ul class="contest-form__list list">
+        <li class="contest-form__item">
+          <label class="contest-form__label contest-form__label--main" for="appointment-tel">Контактный телефон*:</label>
+          <input class="contest-form__input contest-form__input--main" id="appointment-tel" type="text" name="tel" placeholder="Введите телефон">
+        </li>
+        <li class="contest-form__item">
+          <label class="contest-form__label contest-form__label--main" for="appointment-email">Электронная почта*:</label>
+          <input class="contest-form__input contest-form__input--main" id="appointment-email" type="email" name="email" placeholder="Введите e-mail">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="contest-form__block form-block">
+      <legend class="contest-form__legend ">Ваше общее впечатление:</legend>
+      <ul class="contest-form__list list">
+        <li class="contest-form__item contest-form__item--radio">
+          <input class="contest-form__input contest-form__input--radio" type="radio" name="system" id="positive">
+          <label class="contest-form__label contest-form__label--radio" for="positive">
+            Скорее положительное
+          </label>
+        </li>
+        <li class="contest-form__item contest-form__item--radio">
+          <input class="contest-form__input  contest-form__input--radio" type="radio" name="system" id="negative">
+          <label class="contest-form__label contest-form__label--radio" for="negative">
+            Скорее отрицательное
+          </label>
+        </li>
+        <li class="contest-form__item contest-form__item--radio">
+          <input class="contest-form__input  contest-form__input--radio" type="radio" name="system" id="neutral">
+          <label class="contest-form__label contest-form__label--radio" for="neutral">
+            Затрудняюсь ответить
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <div class="contest-form__wrapper">
+    <fieldset class="contest-form__block form-block">
+      <legend class="contest-form__legend">Посещенные достопримечательности</legend>
+      <ul class="contest-form__list list">
+        <li class="contest-form__item contest-form__item--filter">
+          <input class="contest-form__input contest-form__input--checkbox" name="devil's bridge" id="form-devil's-bridge"
+          type="checkbox" checked>
+              <label class="contest-form__label" for="form-devil's-bridge">Мост Дьявола
+              </label>
+        </li>
+        <li class="contest-form__item contest-form__item--filter">
+          <input class="contest-form__input contest-form__input--checkbox" name="bell mountain" id="form-bell-mountain"
+            type="checkbox" checked>
+            <label class="contest-form__label" for="form-bell-mountain">Гора-Колокол
+            </label>
+        </li>
+        <li class="contest-form__item contest-form__item--filter">
+          <input class="contest-form__input contest-form__input--checkbox" name="slide-park" id="form-slide-park"
+            type="checkbox">
+          <label class="contest-form__label" for="form-slide-park">Слайд-парк
+          </label>
+        </li>
+        <li class="contest-form__item contest-form__item--filter">
+          <input class="contest-form__input contest-form__input--checkbox" name="red-rocks"
+            id="form-red-rocks" type="checkbox">
+          <label class="contest-form__label" for="form-red-rocks">Красные скалы
+          </label>
+        </li>
+       </ul>
+    </fieldset>
+  </div>
+   
+  <div class="contest-form__text">
+    <label class="contest-form contest-form__legend label-textarea" for="form-textarea">Опишите свои эмоции</label>
+    <textarea class="contest-form__textarea" rows="5" cols="6" name="text" id="form-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+  </div>
+    <button class="contest-form__button " type="submit">Отправить отзыв</button>
+  </form>
+  </main>
 
   <footer class="footer-main">
     <div class="container">
