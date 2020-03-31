@@ -1,0 +1,6 @@
+.page-main__block {
+  @include bg-img("bg-back-tablet@1x.jpg");
+  background-position: 50% 0;
+  text-align: center;
+  color: $black-two;
+}
