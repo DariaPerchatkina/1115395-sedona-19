@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню </button>
+      <button class="main-nav__toggle" type="button">Закрыть меню </button>
       <ul class="main-nav__list site-list list">
         <li class="site-list__item">
           <a class="site-list__link link" href="index.html">главная</a>
@@ -25,9 +25,12 @@
           <a class="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
         </li>
       </ul>
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Путешествие в Седону"></a>
+      <button class="main-nav__trigger" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Путешествие в Седону"></a>
   </header>
 
   <main class="page-inner">
@@ -177,17 +180,17 @@
   </footer>
 
   <section class="contest-form__modal">
-      <h3 class="popup__title">Что-то пошло не так!</h3>
-      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup__btn btn contest-form__button" type="button">OK</button>
+    <h3 class="popup__title">Что-то пошло не так!</h3>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__btn btn contest-form__button" type="button">OK</button>
   </section>
 
   <section class="contest-form__modal">
-      <h3 class="popup__title">Ваш отзыв отправлен!</h3>
-      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-        В ближайшее время мы опубликуем его на сайте.
-      </p>
-      <button class="popup__btn btn contest-form__button" type="button">Закрыть окно</button>
+    <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+    <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <button class="popup__btn btn contest-form__button" type="button">Закрыть окно</button>
   </section>
 
 </body>

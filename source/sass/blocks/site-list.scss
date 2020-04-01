@@ -1,15 +1,25 @@
 .site-list__item {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2.22;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 0px 1px 0 0 $top-shadow, inset 0px 1px 0 0 $bottom-shadow;
-  }
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.22;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 1px 0 0 $top-shadow, inset 0px 1px 0 0 $bottom-shadow;
+}
 
-  // .site-list__link {
-  //   padding-top: 20px;
-  //   padding-bottom: 21px;
-  // }
+.site-list__toggle {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  background-image: url("../img/icon-cross.svg");
+  background-size: 46px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  cursor: pointer;
+  background-color: $transparent;
+}
+

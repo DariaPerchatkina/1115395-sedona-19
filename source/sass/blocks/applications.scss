@@ -1,0 +1,18 @@
+.applications__item {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.applications__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  color: $black;
+}
+
+.applications__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $black-two;
+}

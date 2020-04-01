@@ -1,6 +1,35 @@
+.page-main {
+  position: relative;
+  background-image: url("../img/bg-back-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top -30px right 0px;
+  background-size: 100%;
+}
+
+.page-main__logo {
+  margin: 125px 0;
+}
+
 .page-main__block {
-  @include bg-img("bg-back-tablet@1x.jpg");
-  background-position: 50% 0;
   text-align: center;
+  color: $black;
+}
+
+.page-main__wrapper {
+  padding: 40px 110px;
+}
+
+.page-main__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-main__intro {
+  font-size: 14px;
+  font-weight: 400;
   color: $black-two;
+  text-transform: uppercase;
 }
