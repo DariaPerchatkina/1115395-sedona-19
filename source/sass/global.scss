@@ -61,6 +61,15 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.btn-style {
+  width: 280px;
+  height: 55px;
+  padding: 20px 40px;
+  background-color: $header-bg;
+  border-radius: 5px;
+  align-items: center;
+}
+
 .container {
   min-width: 255px;
   margin: 0 auto;

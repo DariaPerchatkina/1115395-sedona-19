@@ -1,0 +1,28 @@
+.sentence {
+  padding: 40px 50px;
+}
+
+.sentence__title {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.sentence__description {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black-two;
+}
+
+.sentence__link {
+  font-size: 21px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $header-bg;
+  padding: 25px 45px;
+  margin-top: 28px;
+}
