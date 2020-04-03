@@ -5,6 +5,14 @@
   color: $black;
 }
 
+.footer-main__link {
+  position: relative;
+}
+
+.footer-main__link::after {
+  content: url('../img/logo-htmlacademy.svg');
+}
+
 .footer-main__developer {
   font-size: 14px;
   color: $black;

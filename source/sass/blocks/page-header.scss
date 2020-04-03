@@ -5,32 +5,25 @@
 
 .page-header__wrapper {
   position: relative;
-  min-height: 136px;
+  min-height: 166px;
 }
 
 .page-header__logo {
-  width: 222px;
-  height: 83px;
   position: absolute;
-  left: 390px;
+  left: 323px;
 }
 
 
 .page-header__trigger {
   display: block;
   position: absolute;
-  top: 50px;
-  right: 60px;
+  top: 51px;
+  right: 80px;
   background-image: url("../img/icon-menu.svg");
-  background-size: 46px;
-  width: 46px;
-  height: 46px;
+  background-size: 66px;
+  width: 66px;
+  height: 66px;
   border: none;
   cursor: pointer;
   background-color: $transparent;
-}
-
-.page-header__img {
-  width: 223px;
-  height: 183px;
 }

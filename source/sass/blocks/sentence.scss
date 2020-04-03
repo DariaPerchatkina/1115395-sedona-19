@@ -22,7 +22,12 @@
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  background-color: $header-bg;
   padding: 25px 45px;
   margin-top: 28px;
+}
+
+.sentence__link--map {
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }

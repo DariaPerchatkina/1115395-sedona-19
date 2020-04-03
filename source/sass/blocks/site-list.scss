@@ -4,8 +4,8 @@
   line-height: 2.22;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 26px;
   border-top: 1px solid $gray;
   box-shadow: 0 1 0 0 $top-shadow, inset 0 1 0 0 $bottom-shadow;
 }
@@ -14,11 +14,12 @@
   display: block;
   position: absolute;
   top: 50px;
-  right: 60px;
+  right: 82px;
   background-image: url("../img/icon-cross.svg");
-  background-size: 46px;
-  width: 46px;
-  height: 46px;
+  background-repeat: no-repeat;
+  background-size: 66px;
+  width: 66px;
+  height: 66px;
   border: none;
   cursor: pointer;
   background-color: $transparent;
