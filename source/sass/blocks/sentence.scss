@@ -2,6 +2,10 @@
   padding: 40px 50px;
 }
 
+.sentence__wrapper {
+  margin-bottom: 50px;
+}
+
 .sentence__title {
   font-size: 21px;
   font-weight: 700;
@@ -24,10 +28,12 @@
   text-transform: uppercase;
   padding: 25px 45px;
   margin-top: 28px;
+  background-color: $header-bg;
 }
 
 .sentence__link--map {
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: $transparent;
 }

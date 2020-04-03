@@ -4,4 +4,25 @@
   background-repeat: no-repeat;
   background-position: top -280px right 0;
   background-size: 100%;
+  text-transform: uppercase;
+}
+
+.page-inner__logo {
+  margin: 120px 0;
+}
+
+.page-inner__wrapper {
+  padding: 60px;
+}
+
+.page-inner__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.page-inner__intro {
+  font-size: 14px;
+  font-weight: 400;
+  color: $black-two;
 }
