@@ -1,29 +1,22 @@
 .page-header {
-  background-color: $white;
   text-align: center;
 }
 
 .page-header__wrapper {
   position: relative;
-  min-height: 166px;
+  min-height: 56px;
 }
-
-.page-header__logo {
-  position: absolute;
-  left: 323px;
-}
-
 
 .page-header__trigger {
   display: block;
   position: absolute;
-  top: 51px;
-  right: 80px;
+  top: 16px;
+  right: -4px;
   background-image: url("../img/icon-menu.svg");
-  background-size: 46px;
+  background-repeat: no-repeat;
+  background-size: 22px;
   width: 46px;
   height: 46px;
-  border: none;
-  cursor: pointer;
   background-color: $transparent;
 }
+

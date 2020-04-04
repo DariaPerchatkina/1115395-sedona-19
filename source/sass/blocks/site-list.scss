@@ -4,8 +4,8 @@
   line-height: 2.22;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 24px;
-  padding-bottom: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-top: 1px solid $gray;
   box-shadow: 0 1 0 0 $top-shadow, inset 0 1 0 0 $bottom-shadow;
 }
@@ -13,14 +13,12 @@
 .site-list__toggle {
   display: block;
   position: absolute;
-  top: 50px;
-  right: 82px;
-  background-image: url("../img/icon-cross.svg");
+  top: 16px;
+  right: -3px;
+  background-image: url(../img/icon-cross.svg);
   background-repeat: no-repeat;
-  background-size: 46px;
+  background-size: 23px;
   width: 46px;
   height: 46px;
-  border: none;
-  cursor: pointer;
   background-color: $transparent;
 }

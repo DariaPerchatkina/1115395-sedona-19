@@ -1,23 +1,19 @@
 .page-main {
   position: relative;
   background-image: url("../img/bg-back-tablet@1x.jpg");
-  // background-image: linear-gradient(rgb(189, 225, 247), rgb(131, 85, 47));
   background-repeat: no-repeat;
   background-position: top -30px right 0;
   background-size: 100%;
 }
 
 .page-main__logo {
-  margin: 125px 0;
+  width: 100%;
+  height: auto;
 }
 
 .page-main__block {
   text-align: center;
   color: $black;
-}
-
-.page-main__wrapper {
-  padding: 40px 110px;
 }
 
 .page-main__title {

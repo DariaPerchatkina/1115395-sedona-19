@@ -2,13 +2,14 @@
   position: relative;
   background-image: url("../img/bg-back-tablet@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top -280px right 0;
-  background-size: 100%;
+  // background-position: top -280px right 0;
+  // background-size: 100%;
   text-transform: uppercase;
 }
 
 .page-inner__logo {
-  margin: 120px 0;
+  width: 100%;
+  height: auto;
 }
 
 .page-inner__wrapper {
