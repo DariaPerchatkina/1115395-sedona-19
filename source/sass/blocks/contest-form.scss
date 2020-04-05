@@ -1,0 +1,63 @@
+.contest-form {
+  margin-bottom: 50px;
+}
+
+.contest-form__block {
+  border: none;
+}
+
+.contest-form__text {
+  border: none;
+  padding: 10px 0;
+}
+
+.contest-form__legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.contest-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.86;
+  color: $light-black;
+}
+
+.contest-form__label--radio {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: left;
+  text-transform: none;
+}
+
+.contest-form__label--filter {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-transform: none;
+}
+
+.contest-form__input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: left;
+  color: $black;
+}
+
+.contest-form__textarea {
+  background-color: $bh-gray;
+  color: $black;
+}
+
+.contest-form__button {
+  font-size: 21px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 28px;
+  background-color: $header-bg;
+}

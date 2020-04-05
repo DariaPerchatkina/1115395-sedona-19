@@ -1,4 +1,4 @@
-.page-inner {
+.inner-page {
   position: relative;
   background-image: url("../img/bg-back-tablet@1x.jpg");
   background-repeat: no-repeat;
@@ -7,23 +7,23 @@
   text-transform: uppercase;
 }
 
-.page-inner__logo {
+.inner-page__logo {
   width: 100%;
   height: auto;
 }
 
-.page-inner__wrapper {
+.inner-page__title-wrapper {
   padding: 60px;
 }
 
-.page-inner__title {
+.inner-page__title {
   font-size: 18px;
   font-weight: 700;
   color: $black;
 }
 
-.page-inner__intro {
+.inner-page__intro {
   font-size: 14px;
   font-weight: 400;
-  color: $black-two;
+  color: $light-black;
 }

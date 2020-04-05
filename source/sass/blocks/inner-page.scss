@@ -1,0 +1,39 @@
+.inner-page {
+  @include bg-img("bg-back-mobile@1x.jpg");
+  background-position: top -231px right -224px;
+  background-size: auto;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.inner-page__img {
+  margin: 0 auto;
+  margin-bottom: 104px;
+}
+
+.inner-page__title-wrapper {
+  margin-bottom: 51px;
+}
+
+.inner-page__title-wrapper--form {
+  margin-bottom: 38px;
+}
+
+.inner-page__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 28px;
+}
+
+.inner-page__intro {
+  font-size: 14px;
+  font-weight: 400;
+  color: $light-black;
+  padding: 0 5px;
+  line-height: 1.7;
+}
+
+.inner-page__intro--form {
+  padding: 0;
+}

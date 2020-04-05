@@ -14,7 +14,7 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $black-two;
+  color: $light-black;
 }
 
 .sentence__link {
@@ -22,14 +22,6 @@
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  padding: 25px 45px;
   margin-top: 28px;
   background-color: $header-bg;
-}
-
-.sentence__link--map {
-  background-image: url("../img/bg-map-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: $transparent;
 }

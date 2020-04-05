@@ -21,6 +21,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -64,10 +65,13 @@ input[type="radio"].visually-hidden {
 .btn-style {
   width: 280px;
   height: 55px;
-  padding: 20px 40px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: $header-bg;
-  border-radius: 5px;
   align-items: center;
+  border: none;
 }
 
 .container {
