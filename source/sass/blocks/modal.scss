@@ -1,0 +1,45 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 320px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.modal__container {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.modal__wrapper {
+  background-color: $bh-gray;
+  padding: 20px;
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.modal__text {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+.modal__btn {
+  width: 180px;
+  font-size: 18px;
+  margin-top: 0px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 28px;
+  background-color: $header-bg;
+}
+
+.modal__btn--close {
+  width: 280px;
+}

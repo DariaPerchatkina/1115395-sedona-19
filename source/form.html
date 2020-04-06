@@ -11,7 +11,7 @@
 <body>
   <header class="page-header ">
     <nav class="main-nav ">
-      <div clss="main-nav__wrapper container">
+      <div class="main-nav__wrapper container">
         <ul class="main-nav__list site-list list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link link" href="index.html">главная</a>
@@ -46,7 +46,7 @@
     <h1 class="visually-hidden">Ваш отзыв</h1>
     <section class="inner-page__header container">
       <img class="inner-page__img" src="img/text-sedona.svg" width="229" height="39" alt="Логотип последующие">
-      <div class="inner-page__title-wrapper--form">
+      <div class="inner-page__title-wrapper inner-page__title-wrapper--form">
         <h2 class="inner-page__title">Оставьте свой отзыв</h2>
         <p class="inner-page__intro inner-page__intro--form"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а
           также о посещенных вами
@@ -186,19 +186,25 @@
     </a>
   </footer>
 
-  <!-- <section class="contest-form__modal">
-    <h3 class="popup__title">Что-то пошло не так!</h3>
-    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="popup__btn btn contest-form__button" type="button">OK</button>
+  <section class="modal">
+    <div class="modal__container container">
+      <h3 class="modal__title">Что-то пошло не так!</h3>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__btn btn-style" type="button">OK</button>
+    </div>
   </section>
 
-  <section class="contest-form__modal">
-    <h3 class="popup__title">Ваш отзыв отправлен!</h3>
-    <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-      В ближайшее время мы опубликуем его на сайте.
-    </p>
-    <button class="popup__btn btn contest-form__button" type="button">Закрыть окно</button>
-  </section> -->
+  <section class="modal">
+    <div class="modal__container container">
+      <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В ближайшее время мы опубликуем его на сайте.
+      </p>
+    </div>
+        <div class="modal__wrapper">
+          <button class="modal__btn modal__btn--close btn-style" type="button">Закрыть окно</button>
+        </div>
+  </section>
 
 </body>
 
