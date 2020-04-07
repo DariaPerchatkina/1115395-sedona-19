@@ -25,9 +25,28 @@
   font-size: 0;
 }
 
+.footer-social {
+  padding-top: 34px;
+  margin-bottom: 43px;
+}
+
 .footer-social__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.footer-social__item {
+  width: 46px;
+  height: 48px;
+  background-color: $header-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.footer-social__item:last-child {
+  margin-right: 0;
 }

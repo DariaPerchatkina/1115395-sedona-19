@@ -3,18 +3,16 @@
   text-align: center;
 }
 
-.page-header__title-wrapper {
+.page-header__wrapper {
   position: relative;
   min-height: 56px;
 }
 
 .page-header__trigger {
-  @include bg-img("icon-menu.svg");
-
   display: block;
   position: absolute;
-  top: 242px;
-  right: -4px;
+  top: 5px;
+  right: 9px;
   background-size: 22px;
   width: 46px;
   height: 46px;

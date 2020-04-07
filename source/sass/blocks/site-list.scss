@@ -1,3 +1,7 @@
+.site-list {
+  position: relative;
+}
+
 .site-list__item {
   font-size: 18px;
   font-weight: 700;
@@ -11,12 +15,10 @@
 }
 
 .site-list__toggle {
-  @include bg-img("icon-cross.svg");
-
   display: block;
   position: absolute;
-  top: 16px;
-  right: -3px;
+  top: 7px;
+  right: 9px;
   background-size: 23px;
   width: 46px;
   height: 46px;

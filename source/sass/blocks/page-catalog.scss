@@ -1,3 +1,12 @@
+.page-catalog {
+  padding: 0 20px;
+}
+
+.page-catalog__item {
+  text-align: left;
+  margin-bottom: 33px;
+}
+
 .page-catalog__blockquote {
   font-size: 14px;
   text-align: left;
@@ -5,12 +14,15 @@
 }
 
 .page-catalog__text {
+  margin-top: 17px;
+  margin-bottom: 0;
   font-weight: 700;
   text-transform: uppercase;
   color: $black;
 }
 
 .page-catalog__autor {
+  margin-top: 2px;
   font-weight: 400;
   color: $light-black;
   text-transform: initial;
@@ -21,4 +33,15 @@
   font-style: normal;
   color: $light-black;
   text-transform: none;
+}
+
+.page-catalog__button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: $black;
+}
+
+.page-catalog__button::before {
+  content: url("../img/icon-like.svg");
 }

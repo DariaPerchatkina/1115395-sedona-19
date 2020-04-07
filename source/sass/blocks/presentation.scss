@@ -1,7 +1,12 @@
+.presentation {
+  margin-bottom: 132px;
+}
+
 .presentation__title {
   font-size: 18px;
   font-weight: 700;
   color: $black;
+  margin-bottom: 29px;
 }
 
 .presentation__description {
@@ -9,4 +14,10 @@
   font-weight: 400;
   color: $light-black;
   padding: 0 20px;
+  line-height: 1.71;
+}
+
+.presentation__wrapper {
+  padding: 0 20px;
+  margin-bottom: 35px;
 }

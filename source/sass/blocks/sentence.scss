@@ -1,5 +1,6 @@
 .sentence__wrapper {
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .sentence__title {
@@ -10,11 +11,12 @@
 }
 
 .sentence__description {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   color: $light-black;
+  line-height: 1.6;
 }
 
 .sentence__link {

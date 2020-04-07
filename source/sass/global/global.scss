@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   color: $black;
   background-color: $white;
+  overflow: hidden;
 }
 
 *,
@@ -75,7 +76,8 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 280px;
+  max-width: 320px;
+  // padding: 0 20px;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
