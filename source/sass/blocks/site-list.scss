@@ -14,6 +14,10 @@
   box-shadow: 0 1px 0 0 $top-shadow, inset 0 1px 0 0 $bottom-shadow;
 }
 
+.site-list__item--first {
+  border-top: none;
+}
+
 .site-list__toggle {
   display: block;
   position: absolute;
