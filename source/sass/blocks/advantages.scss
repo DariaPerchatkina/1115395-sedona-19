@@ -16,9 +16,13 @@
   color: $white;
 }
 
+.advantages__wrapper {
+  padding: 39px 27px 41px;
+}
+
 .advantages__item--inner {
-  padding-top: 7px;
-  margin-bottom: -7px;
+  position: relative;
+  padding: 26px 35px 29px;
   background-color: $bh-gray;
   color: $black;
 }
@@ -34,13 +38,22 @@
 
 .advantages__description {
   font-size: 14px;
-  margin-bottom: 40px;
-  padding: 0 20px;
+  padding-top: 12px;
 }
 
 .advantages__description--inner {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 16px;
+}
+
+.advantages__item--inner::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 20px;
+  width: 280px;
+  height: 1px;
+  background-color: $gray;
+  opacity: 0.1;
 }
 
 .advantages__img {
