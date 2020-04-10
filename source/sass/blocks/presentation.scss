@@ -1,7 +1,13 @@
+.presentation {
+  padding-top: 31px;
+  padding-bottom: 41px;
+}
+
 .presentation__title {
   font-size: 18px;
   font-weight: 700;
   color: $black;
+  margin-bottom: 29px;
 }
 
 .presentation__description {
@@ -9,4 +15,38 @@
   font-weight: 400;
   color: $light-black;
   padding: 0 20px;
+  line-height: 1.71;
+}
+
+.presentation__wrapper {
+  padding: 0 20px;
+  padding-bottom: 35px;
+}
+
+.presentation__video-wrapper {
+  position: relative;
+  width: 320px;
+  height: 276px;
+}
+
+.presentation__video-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 75px;
+  left: 20px;
+  width: 280px;
+  height: 45px;
+  background-color: $black;
+  opacity: 0.6;
+  z-index: 3;
+}
+
+.presentation__video-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 280px;
+  height: 66px;
+  background-color: $bh-gray;
 }
