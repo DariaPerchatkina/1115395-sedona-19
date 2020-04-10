@@ -1,0 +1,40 @@
+.main-page {
+  @include bg-img("bg-back-mobile@1x.jpg");
+  background-position: top -1px right -224px;
+  background-size: auto;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+
+.main-page__header {
+  padding: 0 20px;
+  margin-bottom: 42px;
+}
+
+.main-page__img {
+  padding-bottom: 125px;
+}
+
+.main-page__title-wrapper {
+  padding: 0 10px;
+}
+
+.main-page__block {
+  text-align: center;
+  color: $black;
+}
+
+.main-page__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 29px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.main-page__intro {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: $light-black;
+}

@@ -1,0 +1,119 @@
+.contest-form {
+  border-top: 1px solid $bh-gray;
+}
+
+.contest-form__block {
+  padding-top: 5px;
+  border: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $bh-gray;
+}
+
+.contest-form__legend--radio {
+  margin-bottom: 32px;
+  padding-top: 20px;
+}
+
+.contest-form__text {
+  border: none;
+  padding: 10px 0;
+  padding-bottom: 40px;
+}
+
+.contest-form__item {
+  padding-bottom: 20px;
+}
+
+.contest-form__legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+  padding-top: 18px;
+  margin-bottom: 17px;
+}
+
+.contest-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.86;
+  color: $light-black;
+}
+
+.contest-form__label--radio {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: left;
+  text-transform: none;
+}
+
+.contest-form__label--filter {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-transform: none;
+}
+
+.contest-form__input {
+  height: 58px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: left;
+  color: $black;
+}
+
+.contest-form__textarea {
+  background-color: $bh-gray;
+  color: $black;
+  padding: 18px 20px;
+}
+
+.contest-form__button {
+  font-size: 21px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  padding-top: 18px;
+  background-color: $header-bg;
+}
+
+.contest-form__list--inner {
+  text-align: left;
+  padding: 0 6px;
+}
+
+.contest-form__item--inner {
+  padding-bottom: 21px;
+}
+
+.contest-form__item--radio {
+  padding-top: 17px;
+  padding-bottom: 27px;
+}
+
+.contest-form__item--radio:last-child {
+  padding-bottom: 38px;
+}
+
+.contest-form__legend--inner {
+  padding-bottom: 3px;
+}
+
+.contest-form__legend--checkbox {
+  padding-bottom: 28px;
+  margin-bottom: 0;
+}
+
+.contest-form__item--filter {
+  padding-bottom: 55px;
+}
+
+.contest-form__item--filter:last-child {
+  padding-bottom: 35px;
+}
+
+.label-textarea {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,28 @@
+.page-header {
+  max-height: 280px;
+  text-align: center;
+}
+
+.page-header__wrapper {
+  position: relative;
+  min-height: 56px;
+}
+
+.page-header__trigger {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  background-size: 22px;
+  width: 55px;
+  height: 55px;
+  background-color: $transparent;
+}
+
+.page-header__img {
+  margin: 0 auto;
+}
+
+.page-header__svg {
+  vertical-align: middle;
+}

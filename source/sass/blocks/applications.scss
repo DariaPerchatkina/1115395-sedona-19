@@ -1,0 +1,27 @@
+.applications {
+  padding-top: 35px;
+  padding-right: 30px;
+  padding-left: 70px;
+  padding-bottom: 11px;
+  background-color: $white;
+}
+
+.applications__item {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.applications__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $black;
+  padding-bottom: 15px;
+}
+
+.applications__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.44;
+  color: $light-black;
+}

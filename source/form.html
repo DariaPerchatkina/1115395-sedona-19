@@ -3,99 +3,132 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - форма отзыва</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">фото и видео</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
-        </li>
-      </ul>
+  <header class="page-header container">
+    <nav class="main-nav ">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list list">
+          <li class="site-list__item site-list__item--active site-list__item--first">
+            <a class="site-list__link link" href="index.html">главная</a>
+            <button class="site-list__toggle btn" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+              <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+                y="0" width="22" height="22" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199"
+                xml:space="preserve">
+                <polygon
+                  points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
+              </svg>
+            </button>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link link" href="photo.html">фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link link">форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
+        </ul>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
+              alt="Путешествие в Седону">
+          </a>
+          <button class="page-header__trigger btn" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg fill="#81b3d2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+              y="0" width="23" height="22" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
+              xml:space="preserve">
+              <g>
+                <rect width="22.928" height="3.964" />
+                <rect y="9.009" width="22.928" height="3.964" />
+                <rect y="18.018" width="22.928" height="3.964" />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
     </nav>
-    <a class="main-header__logo" href="index.html"><img src="https://via.placeholder.com/150x150"
-        alt="Путешествие в Седону"></a>
   </header>
 
-  <main class="page-inner">
-    <h1 class="visually-hidden">Отзыв посетителя</h1>
-    <section class="page-inner__block">
-      <h2 class="page-inner__title">Оставьте свой отзыв</h2>
-      <p class="page-inner__intro"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
-
+  <main class="inner-page container">
+    <h1 class="visually-hidden">Ваш отзыв</h1>
+    <section class="inner-page__header ">
+      <img class="inner-page__img" src="img/text-sedona.svg" width="229" height="39" alt="Логотип последующие">
+      <div class="inner-page__title-wrapper--form">
+        <h2 class="inner-page__title text">Оставьте свой отзыв</h2>
+        <p class="inner-page__intro inner-page__intro--form text"> Помогите нашим отелям стать лучше! оставьте отзыв о
+          них, а
+          также о посещенных вами
+          достопримечательностях</p>
+      </div>
       <form class="contest-form" action="https://echo.htmlacademy.ru/">
         <fieldset class="contest-form__block">
-          <legend class="contest-form__legend">Представьтесь:</legend>
+          <legend class="contest-form__legend text">Представьтесь:</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item">
-              <label class="contest-form__label contest-form__label--main" for="appointment-family">Имя:
-                <input class="contest-form__input contest-form__input--main" id="appointment-family" type="text"
-                  name="family" placeholder="Петр*">
+              <label class="contest-form__label text" for="appointment-family">Имя*:
+                <input class="contest-form__input" id="appointment-family" type="text" name="family" placeholder="Петр">
               </label>
             </li>
             <li class="contest-form__item">
-              <label class="contest-form__label contest-form__label--main" for="appointment-name">Фамилия:
-                <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text"
-                  name="name" placeholder="Иванов*">
+              <label class="contest-form__label text" for="appointment-name">Фамилия*:
+                <input class="contest-form__input" id="appointment-name" type="text" name="name" placeholder="Иванов">
               </label>
             </li>
             <li class="contest-form__item">
-              <label class="contest-form__label contest-form__label--main" for="appointment-patronymic">Отчество:
-                <input class="contest-form__input contest-form__input--main" id="appointment-patronymic" type="text"
-                  name="patronymic" placeholder="Александрович">
+              <label class="contest-form__label text" for="appointment-patronymic">Отчество:
+                <input class="contest-form__input" id="appointment-patronymic" type="text" name="patronymic"
+                  placeholder="Александрович">
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="contest-form__block">
-          <legend class="visually-hidden">Контактная информация:</legend>
-          <ul class="contest-form__list list">
-            <li class="contest-form__item">
-              <label class="contest-form__label contest-form__label--main" for="appointment-tel">Контактный
+          <legend class="contest-form__legend contest-form__legend--inner text">Контактная информация:</legend>
+          <ul class="contest-form__list contest-form__list--inner list">
+            <li class="contest-form__item contest-form__item--inner">
+              <label class="contest-form__label text" for="appointment-tel">Контактный
                 телефон*:
-                <input class="contest-form__input contest-form__input--main" id="appointment-tel" type="text" name="tel"
+                <input class="contest-form__input" id="appointment-tel" type="text" name="tel"
                   placeholder="Введите телефон">
               </label>
             </li>
-            <li class="contest-form__item">
-              <label class="contest-form__label contest-form__label--main" for="appointment-email">Электронная
+            <li class="contest-form__item contest-form__item--inner">
+              <label class="contest-form__label text" for="appointment-email">Электронная
                 почта*:
-                <input class="contest-form__input contest-form__input--main" id="appointment-email" type="email"
-                  name="email" placeholder="Введите e-mail">
+                <input class="contest-form__input" id="appointment-email" type="email" name="email"
+                  placeholder="Введите e-mail">
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-form__block form-block">
-          <legend class="contest-form__legend ">Ваше общее впечатление:</legend>
+        <fieldset class="contest-form__block contest-form__block--radio form-block">
+          <legend class="contest-form__legend contest-form__legend--radio text">Ваше общее впечатление:</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item contest-form__item--radio">
-              <input class="contest-form__input contest-form__input--radio" type="radio" name="system" id="positive">
+              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system"
+                id="positive" checked>
               <label class="contest-form__label contest-form__label--radio" for="positive">
                 Скорее положительное
               </label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
-              <input class="contest-form__input  contest-form__input--radio" type="radio" name="system" id="negative">
+              <input class="visually-hidden contest-form__input  contest-form__input--radio" type="radio" name="system"
+                id="negative">
               <label class="contest-form__label contest-form__label--radio" for="negative">
                 Скорее отрицательное
               </label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
-              <input class="contest-form__input  contest-form__input--radio" type="radio" name="system" id="neutral">
+              <input class="visually-hidden contest-form__input  contest-form__input--radio" type="radio" name="system"
+                id="neutral">
               <label class="contest-form__label contest-form__label--radio" for="neutral">
                 Затрудняюсь ответить
               </label>
@@ -103,91 +136,108 @@
           </ul>
         </fieldset>
         <fieldset class="contest-form__block form-block">
-          <legend class="contest-form__legend">Посещенные достопримечательности</legend>
+          <legend class="contest-form__legend contest-form__legend--checkbox text">Посещенные достопримечательности
+          </legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="devil's bridge"
+              <input class="contest-form__input contest-form__input--checkbox visually-hidden" name="devil's bridge"
                 id="form-devil's-bridge" type="checkbox" checked>
-              <label class="contest-form__label" for="form-devil's-bridge">Мост Дьявола
+              <label class="contest-form__label  contest-form__label--filter" for="form-devil's-bridge">Мост Дьявола
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="bell mountain"
+              <input class="contest-form__input contest-form__input--checkbox visually-hidden" name="bell mountain"
                 id="form-bell-mountain" type="checkbox" checked>
-              <label class="contest-form__label" for="form-bell-mountain">Гора-Колокол
+              <label class="contest-form__label  contest-form__label--filter" for="form-bell-mountain">Гора-Колокол
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="slide-park" id="form-slide-park"
-                type="checkbox">
-              <label class="contest-form__label" for="form-slide-park">Слайд-парк
+              <input class="contest-form__input contest-form__input--checkbox visually-hidden" name="slide-park"
+                id="form-slide-park" type="checkbox">
+              <label class="contest-form__label  contest-form__label--filter" for="form-slide-park">Слайд-парк
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="red-rocks" id="form-red-rocks"
-                type="checkbox">
-              <label class="contest-form__label" for="form-red-rocks">Красные скалы
+              <input class="contest-form__input contest-form__input--checkbox visually-hidden" name="red-rocks"
+                id="form-red-rocks" type="checkbox">
+              <label class="contest-form__label  contest-form__label--filter" for="form-red-rocks">Красные скалы
               </label>
             </li>
           </ul>
         </fieldset>
-
-
         <fieldset class="contest-form__text">
-          <legend class="contest-form contest-form__legend label-textarea" for="form-textarea">Опишите свои
+          <legend class="contest-form contest-form__legend label-textarea text">Опишите свои
             эмоции</legend>
           <label class="visually-hidden" for="form-textarea">Отзыв посетителя</label>
-          <textarea class="contest-form__textarea" rows="5" cols="6" name="text" id="form-textarea"
+          <textarea class="contest-form__textarea" rows="7" cols="29" name="text" id="form-textarea"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="contest-form__button " type="submit">Отправить отзыв</button>
+        <button class="contest-form__button btn-style" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
 
-  <footer class="footer-main">
-    <span>#VISITSEDONA</span>
+  <footer class="footer-main container">
+    <span class="footer-main__hashtag">#VISITSEDONA</span>
     <div class="footer-social">
-      <ul class="footer-social__list">
+      <ul class="footer-social__list list">
         <li class="footer-social__item">
           <a class="footer-social__link">
-            twitter
-            <svg class="footer-social__link footer-social__link--svg" width="150" height="150"></svg>
+            <span class="visually-hidden">twitter</span>
+            <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="18" height="15" fill="#ffffff"
+              viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+                </g>
+              </g>
+            </svg>
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__link">
-            Facebook
-            <svg class="footer-social__link footer-social__link--svg" width="150" height="150"></svg>
+            <span class="visually-hidden">Facebook</span>
+            <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="9" height="19" fill="#ffffff"
+              viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path
+                d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
+            </svg>
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__link">
-            YouTube
-            <svg class="footer-social__link footer-social__link--svg" width="150" height="150"></svg>
+            <span class="visually-hidden">YouTube</span>
+            <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="20" height="14" fill="#ffffff"
+              viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path
+                d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
+            </svg>
           </a>
         </li>
       </ul>
     </div>
-    <a href="https://htmlacademy.ru/intensive/adaptive">
-      <span>Разработано</span>
-      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="htmlacademy">
+    <a class="footer-main__link link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTMLAcademy">
+      <span class="footer-main__developer">Разработано</span>
     </a>
   </footer>
 
-  <section class="contest-form__modal">
-      <h3 class="popup__title">Что-то пошло не так!</h3>
-      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup__btn btn contest-form__button" type="button">OK</button>
+  <!-- <section class="contest-form__modal">
+    <h3 class="popup__title">Что-то пошло не так!</h3>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__btn btn contest-form__button" type="button">OK</button>
   </section>
 
   <section class="contest-form__modal">
-      <h3 class="popup__title">Ваш отзыв отправлен!</h3>
-      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-        В ближайшее время мы опубликуем его на сайте.
-      </p>
-      <button class="popup__btn btn contest-form__button" type="button">Закрыть окно</button>
-  </section>
+    <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+    <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <button class="popup__btn btn contest-form__button" type="button">Закрыть окно</button>
+  </section> -->
 
 </body>
 

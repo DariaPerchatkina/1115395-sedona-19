@@ -1,0 +1,26 @@
+.sentence__wrapper {
+  padding: 24px 20px 50px 20px;
+}
+
+.sentence__title {
+  padding-bottom: 20px;
+  font-size: 21px;
+  font-weight: 700;
+  color: $black;
+}
+
+.sentence__description {
+  padding-bottom: 38px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $light-black;
+  line-height: 1.6;
+}
+
+.sentence__link {
+  font-size: 21px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $header-bg;
+}
