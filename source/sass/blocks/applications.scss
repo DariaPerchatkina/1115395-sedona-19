@@ -24,8 +24,7 @@
   position: relative;
 }
 
-.applications__title {
-  &--housing::after {
+.applications__--housing::after {
   content: "";
   background-image: url("../img/icon-house.svg");
   position: absolute;
@@ -36,9 +35,9 @@
   left: -47px;
   top: -7px;
   overflow: inherit;
-  }
+}
 
-  &--souvenirs::after {
+&--souvenirs::after {
   content: "";
   background-image: url("../img/icon-gift.svg");
   position: absolute;
@@ -50,9 +49,9 @@
   left: -44px;
   top: -8px;
   overflow: inherit;
-  }
+}
 
-  &--food::after {
+&--food::after {
   content: "";
   background-image: url("../img/icon-burger.svg");
   position: absolute;
@@ -64,20 +63,7 @@
   left: -50px;
   top: -2px;
   overflow: inherit;
-  }
 }
-  // &--souvenirs::after
-  //   content: "";
-  //   background-image: url("../img/icon-gift.svg");
-  //   background-size: cover;
-  //   display: block;
-  //   position: absolute;
-  //   left: -48px;
-  //   top: -8px;
-  //   width: 37px;
-  //   height: 36px;
-  //   overflow: inherit;
-  //
 
 .applications__description {
   font-size: 14px;

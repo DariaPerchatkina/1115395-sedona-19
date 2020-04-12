@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   max-width: 320px;
-  left: calc((100vw + 320px)/2);
+  left: calc((100vw + 320px) / 2);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
@@ -33,11 +33,11 @@
 .modal__btn {
   width: 180px;
   font-size: 18px;
-  margin-top: 0px;
+  margin: 0;
+  margin-top: 28px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  margin-top: 28px;
   background-color: $header-bg;
 }
 
