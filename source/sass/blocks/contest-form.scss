@@ -1,5 +1,30 @@
 .contest-form {
   border-top: 1px solid $bh-gray;
+  overflow: hidden;
+}
+
+.contest-form__list{
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__list--main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 6px;
+}
+
+.contest-form__label--main {
+  position: relative;
+  top: 17px;
+}
+
+.contest-form__input--main {
+  position: absolute;
+  top: -22px;
+  left: 50px;
+  padding: 0 20px 0 10px;
 }
 
 .contest-form__block {
@@ -7,6 +32,10 @@
   border: none;
   padding-bottom: 6px;
   border-bottom: 1px solid $bh-gray;
+}
+
+.contest-form__block--radio {
+  padding-bottom: 20px;
 }
 
 .contest-form__legend--radio {
@@ -17,11 +46,11 @@
 .contest-form__text {
   border: none;
   padding: 10px 0;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 .contest-form__item {
-  padding-bottom: 20px;
+  padding-bottom: 52px;
 }
 
 .contest-form__legend {
@@ -37,7 +66,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.86;
-  color: $light-black;
+  color: $black;
 }
 
 .contest-form__label--radio {
@@ -46,6 +75,56 @@
   line-height: 1.44;
   text-align: left;
   text-transform: none;
+  position: absolute;
+  bottom: 11px;
+  left: -23px;
+}
+
+.contest-form__input {
+  height: 58px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: left;
+  color: $black;
+  background-color: $bh-gray;
+  border: none;
+  padding-left: 21px;
+  padding-right: 10px;
+}
+
+.contest-form__input--radio {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+}
+
+.contest-form__radio {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: -79px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $bh-gray;
+  border: 5px solid $bh-gray;
+  outline: none;
+  cursor: pointer;
+}
+
+.contest-form__input--radio:checked + .contest-form__radio::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  width: 21px;
+  height: 21px;
+  background-color: $light-black;
+  border: 3px solid $light-black;
+  border-radius: 50%;
 }
 
 .contest-form__label--filter {
@@ -57,19 +136,11 @@
   text-transform: none;
 }
 
-.contest-form__input {
-  height: 58px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.44;
-  text-align: left;
-  color: $black;
-}
-
 .contest-form__textarea {
   background-color: $bh-gray;
   color: $black;
-  padding: 18px 20px;
+  padding: 14px 20px;
+  line-height: 1.4;
 }
 
 .contest-form__button {
@@ -82,25 +153,73 @@
 }
 
 .contest-form__list--inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
-  padding: 0 6px;
+  padding: 0 6px 10px 6px;
+}
+
+.contest-form__label--inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 22px;
+}
+
+.contest-form__input--inner {
+  position: absolute;
+  top: 33px;
+  left: -22px;
+  padding-right: 0;
 }
 
 .contest-form__item--inner {
-  padding-bottom: 21px;
+  position: relative;
+  padding-bottom: 77px;
+}
+
+.contest-form__item--inner::before {
+  content: "";
+  position: absolute;
+  background-color: $ligth-gray;
+  width: 60px;
+  height: 58px;
+  top: 33px;
+  left: 220px;
+}
+
+.contest-form__item--phone::before{
+  content:"";
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  background-size: auto;
+}
+
+.contest-form__item--email::before{
+  content:"";
+  position: absolute;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  background-size: auto;
 }
 
 .contest-form__item--radio {
+  position: relative;
+  right: -108px;
+  top: -14px;
   padding-top: 17px;
-  padding-bottom: 27px;
-}
-
-.contest-form__item--radio:last-child {
-  padding-bottom: 38px;
+  padding-bottom: 51px;
 }
 
 .contest-form__legend--inner {
   padding-bottom: 3px;
+  margin-bottom: 12px;
 }
 
 .contest-form__legend--checkbox {
@@ -130,12 +249,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
 }
 
 .contest-form__checkbox {
   position: absolute;
-  bottom: 38px;
-  left: 5px;
+  bottom: -17px;
+  left: -78px;
   width: 56px;
   height: 56px;
   background-color: $bh-gray;
@@ -144,7 +264,7 @@
 }
 
 .contest-form__checkbox--red-rocks {
-  bottom: -7px;
+  bottom: -17px;
 }
 
 .contest-form__input--checkbox:checked + .contest-form__checkbox::before {
@@ -160,13 +280,49 @@
 }
 
 .contest-form__input--checkbox:focus + .contest-form__checkbox,
-.contest-form__input--checkbox:hover + .contest-form__checkbox {
+.contest-form__input--checkbox:hover + .contest-form__checkbox,
+.contest-form__input--radio:focus + .contest-form__radio,
+.contest-form__input--radio:hover + .contest-form__radio {
   content: "";
-  position: absolute;
   width: 56px;
   height: 56px;
   background-color: $hover-gray;
-  border: 5px solid $hover-gray;
+  border: none;
   border-bottom: $light-black;
   border-left: $light-black;
 }
+
+.contest-form__input--checkbox:disabled + .contest-form__checkbox{
+  background-color: $disabled-gray;
+  border: 5px solid $disabled-gray;
+}
+
+input::-webkit-input-placeholder {
+  color: $black;
+}
+
+input:-moz-placeholder {
+  color: $black;
+}
+
+input:-ms-input-placeholder {
+  color: $black;
+}
+
+textarea::-webkit-input-placeholder {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  }
+
+  textarea:-moz-placeholder {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  }
+
+  textarea:-ms-input-placeholder {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  }

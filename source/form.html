@@ -61,7 +61,7 @@
     <h1 class="visually-hidden">Ваш отзыв</h1>
     <section class="inner-page__header ">
       <img class="inner-page__img" src="img/text-sedona.svg" width="229" height="39" alt="Логотип последующие">
-      <div class="inner-page__title-wrapper--form">
+      <div class="inner-page__title-wrapper inner-page__title-wrapper--form">
         <h2 class="inner-page__title text">Оставьте свой отзыв</h2>
         <p class="inner-page__intro inner-page__intro--form text"> Помогите нашим отелям стать лучше! оставьте отзыв о
           них, а
@@ -71,21 +71,23 @@
       <form class="contest-form" action="https://echo.htmlacademy.ru/">
         <fieldset class="contest-form__block">
           <legend class="contest-form__legend text">Представьтесь:</legend>
-          <ul class="contest-form__list list">
+          <ul class="contest-form__list contest-form__list--main list">
             <li class="contest-form__item">
-              <label class="contest-form__label text" for="appointment-family">Имя*:
-                <input class="contest-form__input" id="appointment-family" type="text" name="family" placeholder="Петр">
+              <label class="contest-form__label contest-form__label--main text" for="appointment-family">Имя*:
+                <input class="contest-form__input contest-form__input--main" id="appointment-family" type="text"
+                  name="family" placeholder="Петр">
               </label>
             </li>
             <li class="contest-form__item">
-              <label class="contest-form__label text" for="appointment-name">Фамилия*:
-                <input class="contest-form__input" id="appointment-name" type="text" name="name" placeholder="Иванов">
+              <label class="contest-form__label contest-form__label--main text" for="appointment-name">Фамилия*:
+                <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text"
+                  name="name" placeholder="Иванов">
               </label>
             </li>
             <li class="contest-form__item">
-              <label class="contest-form__label text" for="appointment-patronymic">Отчество:
-                <input class="contest-form__input" id="appointment-patronymic" type="text" name="patronymic"
-                  placeholder="Александрович">
+              <label class="contest-form__label contest-form__label--main text" for="appointment-patronymic">Отчество:
+                <input class="contest-form__input contest-form__input--main" id="appointment-patronymic" type="text"
+                  name="patronymic" placeholder="Александрович">
               </label>
             </li>
           </ul>
@@ -93,18 +95,18 @@
         <fieldset class="contest-form__block">
           <legend class="contest-form__legend contest-form__legend--inner text">Контактная информация:</legend>
           <ul class="contest-form__list contest-form__list--inner list">
-            <li class="contest-form__item contest-form__item--inner">
-              <label class="contest-form__label text" for="appointment-tel">Контактный
+            <li class="contest-form__item contest-form__item--inner contest-form__item--phone">
+              <label class="contest-form__label contest-form__label--inner text" for="appointment-tel">Контактный
                 телефон*:
-                <input class="contest-form__input" id="appointment-tel" type="text" name="tel"
-                  placeholder="Введите телефон">
+                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="text"
+                  name="tel" placeholder="Введите телефон">
               </label>
             </li>
-            <li class="contest-form__item contest-form__item--inner">
-              <label class="contest-form__label text" for="appointment-email">Электронная
+            <li class="contest-form__item contest-form__item--inner contest-form__item--email">
+              <label class="contest-form__label contest-form__label--inner text" for="appointment-email">Электронная
                 почта*:
-                <input class="contest-form__input" id="appointment-email" type="email" name="email"
-                  placeholder="Введите e-mail">
+                <input class="contest-form__input contest-form__input--inner" id="appointment-email" type="email"
+                  name="email" placeholder="Введите e-mail">
               </label>
             </li>
           </ul>
@@ -113,24 +115,25 @@
           <legend class="contest-form__legend contest-form__legend--radio text">Ваше общее впечатление:</legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item contest-form__item--radio">
-              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system"
-                id="positive" checked>
               <label class="contest-form__label contest-form__label--radio" for="positive">
                 Скорее положительное
+                <input class="contest-form__input contest-form__input--radio" type="radio" name="system" id="positive"
+                  checked>
+                <span class="contest-form__radio"></span>
               </label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
-              <input class="visually-hidden contest-form__input  contest-form__input--radio" type="radio" name="system"
-                id="negative">
               <label class="contest-form__label contest-form__label--radio" for="negative">
                 Скорее отрицательное
+                <input class="contest-form__input  contest-form__input--radio" type="radio" name="system" id="negative">
+                <span class="contest-form__radio"></span>
               </label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
-              <input class="visually-hidden contest-form__input  contest-form__input--radio" type="radio" name="system"
-                id="neutral">
               <label class="contest-form__label contest-form__label--radio" for="neutral">
                 Затрудняюсь ответить
+                <input class="contest-form__input  contest-form__input--radio" type="radio" name="system" id="neutral">
+                <span class="contest-form__radio"></span>
               </label>
             </li>
           </ul>
@@ -140,31 +143,31 @@
           </legend>
           <ul class="contest-form__list list">
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="devil's bridge"
-                id="form-devil's-bridge" type="checkbox" checked>
-                <span class="contest-form__checkbox"></span>
               <label class="contest-form__label  contest-form__label--filter" for="form-devil's-bridge">Мост Дьявола
+                <input class="contest-form__input contest-form__input--checkbox" name="devil's bridge"
+                  id="form-devil's-bridge" type="checkbox" checked>
+                <span class="contest-form__checkbox"></span>
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="bell mountain"
-                id="form-bell-mountain" type="checkbox" checked>
-                <span class="contest-form__checkbox"></span>
               <label class="contest-form__label  contest-form__label--filter" for="form-bell-mountain">Гора-Колокол
-              </label>
-            </li>
-            <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="slide-park"
-                id="form-slide-park" type="checkbox" checked>
+                <input class="contest-form__input contest-form__input--checkbox" name="bell mountain"
+                  id="form-bell-mountain" type="checkbox" checked>
                 <span class="contest-form__checkbox"></span>
-              <label class="contest-form__label  contest-form__label--filter" for="form-slide-park">Слайд-парк
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="contest-form__input contest-form__input--checkbox" name="red-rocks"
-                id="form-red-rocks" type="checkbox">
-                <span class="contest-form__checkbox contest-form__checkbox--red-rocks"></span>
+              <label class="contest-form__label  contest-form__label--filter" for="form-slide-park">Слайд-парк
+                <input class="contest-form__input contest-form__input--checkbox" name="slide-park" id="form-slide-park"
+                  type="checkbox" checked>
+                <span class="contest-form__checkbox"></span>
+              </label>
+            </li>
+            <li class="contest-form__item contest-form__item--filter">
               <label class="contest-form__label  contest-form__label--filter" for="form-red-rocks">Красные скалы
+                <input class="contest-form__input contest-form__input--checkbox" name="red-rocks" id="form-red-rocks"
+                  type="checkbox">
+                <span class="contest-form__checkbox contest-form__checkbox--red-rocks"></span>
               </label>
             </li>
           </ul>
@@ -173,7 +176,7 @@
           <legend class="contest-form contest-form__legend label-textarea text">Опишите свои
             эмоции</legend>
           <label class="visually-hidden" for="form-textarea">Отзыв посетителя</label>
-          <textarea class="contest-form__textarea" rows="7" cols="29" name="text" id="form-textarea"
+          <textarea class="contest-form__textarea" rows="6" cols="29" name="text" id="form-textarea"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="contest-form__button btn-style" type="submit">Отправить отзыв</button>
@@ -244,9 +247,9 @@
         В ближайшее время мы опубликуем его на сайте.
       </p>
     </div>
-        <div class="modal__wrapper">
-          <button class="modal__btn modal__btn--close btn-style" type="button">Закрыть окно</button>
-        </div>
+    <div class="modal__wrapper">
+      <button class="modal__btn modal__btn--close btn-style" type="button">Закрыть окно</button>
+    </div>
   </section>
 
 </body>
