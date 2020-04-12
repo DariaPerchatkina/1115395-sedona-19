@@ -65,3 +65,17 @@
 .footer-social__item:last-child {
   margin-right: 3px;
 }
+
+.footer-social__item:hover {
+  background-color: $middle-blue;
+}
+
+.footer-social__item:active {
+  background-color: $dark-blue;
+  color: $ligth-white;
+  opacity: 0.3;
+}
+
+.footer-social__item:disabled {
+  background-color: $hover-gray;
+}

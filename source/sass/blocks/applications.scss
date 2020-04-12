@@ -24,7 +24,7 @@
   position: relative;
 }
 
-.applications__--housing::after {
+.applications__item--housing::after {
   content: "";
   background-image: url("../img/icon-house.svg");
   position: absolute;
@@ -37,7 +37,7 @@
   overflow: inherit;
 }
 
-&--souvenirs::after {
+.applications__item--souvenirs::after {
   content: "";
   background-image: url("../img/icon-gift.svg");
   position: absolute;
@@ -51,7 +51,7 @@
   overflow: inherit;
 }
 
-&--food::after {
+.applications__item--food::after {
   content: "";
   background-image: url("../img/icon-burger.svg");
   position: absolute;

@@ -72,6 +72,20 @@ input[type="radio"].visually-hidden {
   background-color: $header-bg;
   align-items: center;
   border: none;
+  outline: none;
+}
+
+.btn-style:hover {
+  background-color: $middle-blue;
+}
+
+.btn-style:active {
+  background-color: $dark-blue;
+  color: $ligth-white;
+}
+
+.btn-style:disabled {
+  background-color: $hover-gray;
 }
 
 .container {
