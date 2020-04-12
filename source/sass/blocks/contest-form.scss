@@ -300,7 +300,7 @@
 }
 
 .contest-form__input--checkbox:disabled + .contest-form__checkbox,
-.contest-form__input--radio:disabled + .contest-form__radio  {
+.contest-form__input--radio:disabled + .contest-form__radio {
   background-color: $disabled-gray;
   border: 5px solid $disabled-gray;
 }
