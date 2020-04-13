@@ -15,15 +15,16 @@
 }
 
 .inner-page__title-wrapper--form {
-  padding-top: 36px;
-  padding-bottom: 16px;
+  padding-top: 39px;
+  padding-bottom: 18px;
 }
 
 .inner-page__title {
   font-size: 18px;
   font-weight: 700;
   color: $black;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
+  line-height: 1.44;
 }
 
 .inner-page__intro {
@@ -31,7 +32,7 @@
   font-weight: 400;
   color: $light-black;
   padding: 0 5px;
-  line-height: 1.75;
+  line-height: 1.71;
 }
 
 .inner-page__intro--form {

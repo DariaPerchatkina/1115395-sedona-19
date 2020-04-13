@@ -1,5 +1,9 @@
 .modal {
   display: none;
+}
+
+.modal-show {
+  display: block;
   position: fixed;
   max-width: 320px;
   left: calc((100vw + 320px) / 2);
