@@ -64,7 +64,7 @@ input[type="radio"].visually-hidden {
 
 .btn-style {
   width: 280px;
-  height: 55px;
+  height: 58px;
   padding-top: 13px;
   padding-bottom: 15px;
   padding-left: 40px;
@@ -72,11 +72,38 @@ input[type="radio"].visually-hidden {
   background-color: $header-bg;
   align-items: center;
   border: none;
+  outline: none;
+}
+
+.btn-style:hover {
+  background-color: $middle-blue;
+}
+
+.btn-style:active {
+  background-color: $dark-blue;
+  color: $ligth-white;
+}
+
+.btn-style:disabled {
+  background-color: $hover-gray;
 }
 
 .container {
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.text {
+  margin: 0;
+  text-transform: uppercase;
 }

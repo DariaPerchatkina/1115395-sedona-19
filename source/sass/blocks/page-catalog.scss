@@ -1,16 +1,30 @@
+.page-catalog__item {
+  position: relative;
+  text-align: left;
+  padding: 22px 20px 39px 20px;
+  border-top: 1px solid $bh-gray;
+}
+
+.page-catalog__item:last-child {
+  border-bottom: 1px solid $bh-gray;
+}
+
 .page-catalog__blockquote {
   font-size: 14px;
   text-align: left;
   margin: 0;
+  padding-bottom: 11px;
 }
 
 .page-catalog__text {
+  padding-top: 18px;
+  margin-bottom: 0;
   font-weight: 700;
-  text-transform: uppercase;
   color: $black;
 }
 
 .page-catalog__autor {
+  padding-top: 2px;
   font-weight: 400;
   color: $light-black;
   text-transform: initial;
@@ -21,4 +35,22 @@
   font-style: normal;
   color: $light-black;
   text-transform: none;
+}
+
+.page-catalog__button {
+  position: absolute;
+  bottom: -3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: $black;
+}
+
+.page-catalog__button:last-child {
+  padding-bottom: 19px;
+}
+
+.page-catalog__button::before {
+  content: url("../img/icon-like.svg");
+  margin-right: 14px;
 }

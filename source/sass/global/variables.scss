@@ -1,6 +1,7 @@
 //цвета
 $header-bg: #81b3d2;
 $white: #ffffff;
+$ligth-white: rgba(255, 255, 255, 0.3);
 $transparent: rgba(0, 0, 0, 0);
 $top-shadow: rgba(1, 1, 1, 0.2);
 $bottom-shadow: rgba(255, 255, 255, 0.2);
@@ -9,10 +10,17 @@ $black:#000000;
 $gray: #646e7a;
 $bh-gray:#f2f2f2;
 $header-bc: #accef5;
+$hover-gray: #e5e5e5;
+$disabled-gray: #d5d5d5;
+$ligth-gray:#e6e6e6;
+$middle-blue: #669ec0;
+$dark-blue: #5496bd;
 
 
 //размеры
 $width-mobile: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
 
 //шрифты
 $font-main: "PT Sans", "Arial", sans-serif;

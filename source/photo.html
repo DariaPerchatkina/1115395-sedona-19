@@ -10,14 +10,20 @@
 
 <body>
 
-  <header class="page-header ">
+  <header class="page-header container">
     <nav class="main-nav ">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--active site-list__item--first">
             <a class="site-list__link link" href="index.html">главная</a>
             <button class="site-list__toggle btn" type="button">
-              <span class="visually-hidden">Открыть меню</span>
+              <span class="visually-hidden">Закрытьы меню</span>
+              <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
+                y="0" width="22" height="22" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199"
+                xml:space="preserve">
+                <polygon
+                  points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
+              </svg>
             </button>
           </li>
           <li class="site-list__item">
@@ -37,6 +43,15 @@
           </a>
           <button class="page-header__trigger btn" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <svg fill="#81b3d2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="23" height="22" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
+              xml:space="preserve">
+              <g>
+                <rect width="22.928" height="3.964" />
+                <rect y="9.009" width="22.928" height="3.964" />
+                <rect y="18.018" width="22.928" height="3.964" />
+              </g>
+            </svg>
           </button>
         </div>
       </div>
@@ -45,11 +60,11 @@
 
   <main class="inner-page container">
     <h1 class="visually-hidden">Фотографии и видео из Седоны</h1>
-    <section class="inner-page__header  container">
+    <section class="inner-page__header ">
       <img class="inner-page__img" src="img/text-sedona.svg" width="229" height="39" alt="Логотип последующие">
       <div class="inner-page__title-wrapper">
-        <h2 class="inner-page__title">Фото и видео</h2>
-        <p class="inner-page__intro">Не можешь решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        <h2 class="inner-page__title text">Фото и видео</h2>
+        <p class="inner-page__intro text">Не можешь решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
       <div class="page-catalog ">
@@ -61,20 +76,20 @@
               <img class="page-catalog__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
                 alt="photo-1">
               <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text">Неродные просторы</p>
-                <p class="page-catalog__autor">Автор фото: <cite class="page-catalog__cite"> Борис</cite></p>
+                <p class="page-catalog__text text">Неродные просторы</p>
+                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Борис</cite></p>
               </blockquote>
-              <button>1350</button>
+              <button class="page-catalog__button btn">1350</button>
             </li>
             <li class="page-catalog__item">
               <a class="page-catalog__link link" href="#"></a>
               <img class="page-catalog__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
                 alt="photo-2">
               <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text">Местная растительность</p>
-                <p class="page-catalog__autor">Автор фото: <cite class="page-catalog__cite"> Сергей</cite></p>
+                <p class="page-catalog__text text">Местная растительность</p>
+                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Сергей</cite></p>
               </blockquote>
-              <button>1350</button>
+              <button class="page-catalog__button btn">143</button>
             </li>
             <li class="page-catalog__item">
               <a class="page-catalog__link link" href="#">
@@ -82,10 +97,10 @@
                   alt="photo-3">
               </a>
               <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text">Дорога на север</p>
-                <p class="page-catalog__autor">Автор фото: <cite class="page-catalog__cite"> Петр</cite></p>
+                <p class="page-catalog__text text">Дорога на север</p>
+                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Петр</cite></p>
               </blockquote>
-              <button>96</button>
+              <button class="page-catalog__button btn">96</button>
             </li>
             <li class="page-catalog__item">
               <a class="page-catalog__link link" href="#">
@@ -93,22 +108,26 @@
                   alt="photo-4">
               </a>
               <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text">Мост дьявола</p>
-                <p class="page-catalog__autor">Автор фото: <cite class="page-catalog__cite"> Антон</cite></p>
+                <p class="page-catalog__text text">Мост дьявола</p>
+                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Антон</cite></p>
               </blockquote>
-              <button>254</button>
+              <button class="page-catalog__button btn">254</button>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="presentation container">
-      <h3 class="presentation__title">Вы еще сомневаетесь?</h3>
-      <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-        очередной раз!</p>
-      <video class="presentation__video">
-        <source src="videofile.ogg">
-      </video>
+    <section class="presentation">
+      <div class="presentation__wrapper">
+        <h3 class="presentation__title text">Все еще сомневаетесь?</h3>
+        <p class="presentation__description text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+          в
+          очередной раз!</p>
+      </div>
+      <div class="presentation__video-wrapper">
+        <video class="presentation__video" width="320" poster="../img/video-mobile@1x.jpg">
+        </video>
+      </div>
     </section>
   </main>
 
@@ -118,20 +137,39 @@
       <ul class="footer-social__list list">
         <li class="footer-social__item">
           <a class="footer-social__link">
-            twitter
-            <svg class="footer-social__link footer-social__link--svg" width="150" height="150"></svg>
+            <span class="visually-hidden">twitter</span>
+            <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="18" height="15" fill="#ffffff"
+              viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+                </g>
+              </g>
+            </svg>
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__link">
-            Facebook
-            <svg class="footer-social__link footer-social__link--svg" width="150" height="150"></svg>
+            <span class="visually-hidden">Facebook</span>
+            <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="9" height="19" fill="#ffffff"
+              viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path
+                d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
+            </svg>
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__link">
-            YouTube
-            <svg class="footer-social__link footer-social__link--svg" width="150" height="150"></svg>
+            <span class="visually-hidden">YouTube</span>
+            <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="20" height="14" fill="#ffffff"
+              viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path
+                d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
+            </svg>
           </a>
         </li>
       </ul>

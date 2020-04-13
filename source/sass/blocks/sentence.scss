@@ -1,20 +1,20 @@
 .sentence__wrapper {
-  margin-bottom: 50px;
+  padding: 24px 20px 50px 20px;
 }
 
 .sentence__title {
+  padding-bottom: 20px;
   font-size: 21px;
   font-weight: 700;
-  text-transform: uppercase;
   color: $black;
 }
 
 .sentence__description {
-  margin-bottom: 40px;
+  padding-bottom: 38px;
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
   color: $light-black;
+  line-height: 1.6;
 }
 
 .sentence__link {
@@ -22,6 +22,5 @@
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  margin-top: 28px;
   background-color: $header-bg;
 }
