@@ -4,6 +4,11 @@
   padding-left: 70px;
   padding-bottom: 11px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    padding: 60px 7px 28px 10px;
+  }
 }
 
 .applications__title {
@@ -12,53 +17,91 @@
   line-height: 1.5;
   color: $black;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.24;
+  }
+}
+
+.applications__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .applications__item {
-  margin-bottom: 28px;
+  padding-bottom: 28px;
   text-align: left;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-top: 99px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+  }
+}
+
+.applications__item::after {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 37px;
+  height: 36px;
+  overflow: inherit;
+
+  @media (min-width: $tablet-width) {
+    background-size: inherit;
+    width: 75px;
+    height: 76px;
+  }
 }
 
 .applications__item--housing::after {
   content: "";
   background-image: url("../img/icon-house.svg");
   position: absolute;
-  background-size: cover;
-  display: block;
-  width: 37px;
-  height: 36px;
   left: -47px;
   top: -7px;
-  overflow: inherit;
+
+  @media (min-width: $tablet-width) {
+    left: 80px;
+    top: 0;
+  }
+}
+
+.applications__item--souvenirs {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .applications__item--souvenirs::after {
   content: "";
   background-image: url("../img/icon-gift.svg");
   position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  width: 37px;
-  height: 36px;
   left: -44px;
   top: -8px;
-  overflow: inherit;
+
+  @media (min-width: $tablet-width) {
+    left: 83px;
+    top: -2px;
+  }
 }
 
 .applications__item--food::after {
   content: "";
   background-image: url("../img/icon-burger.svg");
   position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  width: 37px;
-  height: 36px;
   left: -50px;
   top: -2px;
-  overflow: inherit;
+
+  @media (min-width: $tablet-width) {
+    left: 82px;
+    top: 3px;
+  }
 }
 
 .applications__description {
@@ -66,4 +109,8 @@
   font-weight: 400;
   line-height: 1.44;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.5;
+  }
 }

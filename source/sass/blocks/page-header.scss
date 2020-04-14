@@ -1,22 +1,37 @@
 .page-header {
   max-height: 280px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__wrapper {
-  position: relative;
   min-height: 56px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: calc((100vw - 51px)/2);
+  z-index: 2;
+}
+
+.page-header__logo {
+  height: 83px;
+  transform: translateX(-26%);
 }
 
 .page-header__trigger {
   display: block;
   position: absolute;
-  top: 0;
+  top: 223px;
   right: 5px;
   background-size: 22px;
   width: 55px;
   height: 55px;
   background-color: $transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__img {
