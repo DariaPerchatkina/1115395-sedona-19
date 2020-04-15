@@ -6,7 +6,6 @@
 .contest-form__list {
   display: flex;
   flex-direction: column;
-  padding-left: 6px;
   align-items: flex-start;
 }
 
@@ -17,10 +16,9 @@
 }
 
 .contest-form__block {
-  padding-top: 5px;
+  margin: 0;
+  padding: 5px 20px;
   border: none;
-  padding-bottom: 5px;
-  padding-left: 11px;
   border-bottom: 1px solid $bh-gray;
 }
 
@@ -40,7 +38,8 @@
 }
 
 .contest-form__item {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .contest-form__legend {
@@ -80,14 +79,19 @@
   text-align: left;
   color: $black;
   background-color: $bh-gray;
-  border: none;
-  margin-left: 15px;
+  border: 4px solid $transparent;
 }
 
-.contest-form__input:active {
+.contest-form__input--main {
+  width: 100%;
+  margin-left: 15px;
+  padding-left: 17px;
+}
+
+.contest-form__input:focus {
   background-color: $white;
   outline: none;
-  border: 4px solid $hover-gray;
+  border-color: $hover-gray;
 }
 
 .contest-form__input:hover {
@@ -153,40 +157,39 @@
 
 .contest-form__list--inner {
   text-align: left;
-  padding: 0 6px 12px 6px;
+  padding: 0;
 }
 
 .contest-form__label--inner {
   position: relative;
   display: flex;
   flex-direction: column;
-  left: 22px;
+  align-items: flex-start;
+  padding-left: 21px;
 }
 
 .contest-form__input--inner {
-  position: absolute;
   width: 220px;
-  top: 34px;
-  left: -35px;
   padding-right: 0;
+  margin-left: -21px;
+  padding-left: 18px;
 }
 
 .contest-form__item--inner {
-  position: relative;
-  padding-bottom: 77px;
+  width: 100%;
 }
 
-.contest-form__item--inner::before {
+.contest-form__label--inner::before {
   content: "";
   position: absolute;
   background-color: $ligth-gray;
   width: 60px;
   height: 58px;
-  top: 34px;
-  left: 223px;
+  top: 26px;
+  right: 0;
 }
 
-.contest-form__item::before {
+.contest-form__label::before {
   content: "";
   position: absolute;
   background-position: center;
@@ -194,13 +197,13 @@
   background-size: auto;
 }
 
-.contest-form__item--phone::before {
+.contest-form__label--phone::before {
   content: "";
 
   @include bg-img("icon-phone.svg");
 }
 
-.contest-form__item--email::before {
+.contest-form__label--email::before {
   content: "";
 
   @include bg-img("icon-mail.svg");
@@ -295,7 +298,6 @@
 
 input::-webkit-input-placeholder {
   color: $black;
-  padding-left: 19px;
 }
 
 input:-moz-placeholder {
