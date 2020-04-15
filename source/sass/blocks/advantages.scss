@@ -43,6 +43,15 @@
   padding: 26px 35px 29px;
   background-color: $bh-gray;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+    height: 256px;
+    align-items: center;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 34px;
+  }
 }
 
 .advantages__title {
