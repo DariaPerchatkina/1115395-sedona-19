@@ -22,6 +22,7 @@
 
 .applications__item::after {
   content: "";
+  position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
@@ -33,7 +34,6 @@
 .applications__item--housing::after {
   content: "";
   background-image: url("../img/icon-house.svg");
-  position: absolute;
   left: -47px;
   top: -7px;
 }
@@ -41,7 +41,6 @@
 .applications__item--souvenirs::after {
   content: "";
   background-image: url("../img/icon-gift.svg");
-  position: absolute;
   left: -44px;
   top: -8px;
 }
@@ -49,7 +48,6 @@
 .applications__item--food::after {
   content: "";
   background-image: url("../img/icon-burger.svg");
-  position: absolute;
   left: -50px;
   top: -2px;
 }

@@ -186,24 +186,22 @@
   left: 223px;
 }
 
-.contest-form__item--phone::before {
+.contest-form__item::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
   background-position: center;
   display: block;
   background-size: auto;
 }
 
+.contest-form__item--phone::before {
+  content: "";
+  @include bg-img("icon-phone.svg");
+}
+
 .contest-form__item--email::before {
   content: "";
-  position: absolute;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  background-size: auto;
+  @include bg-img("icon-mail.svg");
 }
 
 .contest-form__item--radio {

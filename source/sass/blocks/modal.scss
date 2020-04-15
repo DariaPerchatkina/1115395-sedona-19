@@ -5,6 +5,7 @@
 .modal-show {
   display: block;
   position: fixed;
+  top: 0;
   max-width: 320px;
   left: calc((100vw + 320px) / 2);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
