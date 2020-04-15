@@ -196,11 +196,13 @@
 
 .contest-form__item--phone::before {
   content: "";
+
   @include bg-img("icon-phone.svg");
 }
 
 .contest-form__item--email::before {
   content: "";
+
   @include bg-img("icon-mail.svg");
 }
 
