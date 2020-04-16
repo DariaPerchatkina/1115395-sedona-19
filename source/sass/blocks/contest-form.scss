@@ -17,27 +17,7 @@
 }
 
 .contest-form__block--radio {
-  padding-bottom: 13px;
-}
-
-.contest-form__legend--radio {
-  margin-bottom: 32px;
-  padding-top: 20px;
-}
-
-.contest-form__text {
-  border: none;
-  padding: 10px 0;
-  padding-bottom: 42px;
-}
-
-.contest-form__item {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.contest-form__item--filter {
-  margin-bottom: 23px;
+  padding-bottom: 15px;
 }
 
 .contest-form__legend {
@@ -47,6 +27,30 @@
   text-align: center;
   padding-top: 18px;
   margin-bottom: 17px;
+}
+
+.contest-form__legend--radio {
+  margin-bottom: 18px;
+  padding-top: 19px;
+}
+
+.contest-form__text {
+  border: none;
+  padding: 11px 0;
+  padding-bottom: 42px;
+}
+
+.contest-form__item {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contest-form__item--filter {
+  margin-bottom: 24px;
+}
+
+.contest-form__item--filter:last-child {
+  margin-bottom: 22px;
 }
 
 .contest-form__input {
@@ -87,7 +91,6 @@
 
 .contest-form__label--radio {
   position: relative;
-  // display: flex;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.44;
@@ -114,7 +117,6 @@
 }
 
 .contest-form__input--radio:checked + label::after {
-  content: "";
   display: block;
 }
 
@@ -122,19 +124,16 @@
 .contest-form__input--checkbox:hover + .contest-form__label--checkbox::before,
 .contest-form__input--radio:focus + label::before,
 .contest-form__input--radio:hover + label::before {
-  content: "";
   background-color: $hover-gray;
 }
 
 .contest-form__input--checkbox:disabled + .contest-form__label--checkbox::before,
 .contest-form__input--radio:disabled + label::before {
-  content: "";
   background-color: $disabled-gray;
 }
 
 .contest-form__input--checkbox:disabled + .contest-form__label--checkbox::after,
 .contest-form__input--radio:disabled + label::after {
-  content: "";
   opacity: 0.3;
 }
 
@@ -167,7 +166,6 @@
 }
 
 .contest-form__input--checkbox:checked + .contest-form__label--checkbox::after {
-  content: "";
   display: block;
 }
 
@@ -224,7 +222,7 @@
   background-color: $ligth-gray;
   width: 60px;
   height: 58px;
-  top: 34px;
+  top: 33px;
   right: 0;
 }
 
@@ -250,7 +248,7 @@
 }
 
 .contest-form__item--radio {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .contest-form__legend--inner {
@@ -265,6 +263,7 @@
 
 .label-textarea {
   margin-bottom: 8px;
+  padding-top: 16px;
 }
 
 input::-webkit-input-placeholder {

@@ -93,6 +93,14 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .text {

@@ -7,7 +7,7 @@
 }
 
 .footer-main__hashtag {
-  margin-right: 4px;
+  margin-right: 2px;
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
@@ -53,7 +53,7 @@
 }
 
 .footer-social__item {
-  width: 46px;
+  width: 47px;
   height: 48px;
   background-color: $header-bg;
   display: flex;
@@ -62,8 +62,12 @@
   margin-right: 6px;
 }
 
+.footer-social__item:nth-child(2) {
+  padding-top: 4px;
+}
+
 .footer-social__item:last-child {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .footer-social__item:hover {
@@ -78,4 +82,9 @@
 
 .footer-social__item:disabled {
   background-color: $hover-gray;
+}
+
+.footer-social__link--svg {
+  text-align: center;
+  align-items: center;
 }
