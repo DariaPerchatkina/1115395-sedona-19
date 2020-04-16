@@ -5,15 +5,20 @@
 .modal-show {
   display: block;
   position: fixed;
-  top: 0;
+  top: 50px;
   max-width: 320px;
-  left: calc((100vw + 320px) / 2);
+  left: calc(50% - 160px);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: $white;
 }
 
 .modal__container {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+}
+
+.modal__container--second {
+  padding-bottom: 15px;
 }
 
 .modal__wrapper {
@@ -26,20 +31,21 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .modal__text {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 10px 30px;
+  padding: 30px 50px 29px;
+  margin: 0;
 }
 
 .modal__btn {
   width: 180px;
   font-size: 18px;
   margin: 0;
-  margin-top: 28px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
