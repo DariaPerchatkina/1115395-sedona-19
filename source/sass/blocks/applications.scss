@@ -6,17 +6,50 @@
   background-color: $white;
 }
 
-.applications__item {
-  margin-bottom: 28px;
-  text-align: left;
-}
-
 .applications__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
   color: $black;
   padding-bottom: 15px;
+}
+
+.applications__item {
+  margin-bottom: 28px;
+  text-align: left;
+  position: relative;
+}
+
+.applications__item::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 37px;
+  height: 36px;
+  overflow: inherit;
+}
+
+.applications__item--housing::after {
+  content: "";
+  background-image: url("../img/icon-house.svg");
+  left: -47px;
+  top: -7px;
+}
+
+.applications__item--souvenirs::after {
+  content: "";
+  background-image: url("../img/icon-gift.svg");
+  left: -44px;
+  top: -8px;
+}
+
+.applications__item--food::after {
+  content: "";
+  background-image: url("../img/icon-burger.svg");
+  left: -50px;
+  top: -2px;
 }
 
 .applications__description {
