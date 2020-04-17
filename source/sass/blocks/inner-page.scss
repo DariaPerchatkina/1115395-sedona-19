@@ -3,20 +3,39 @@
   background-position: top -232px right -224px;
   background-size: auto;
   padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    @include bg-img("bg-back-tablet@1x.jpg");
+    background-position: top -230px center;
+    padding-top: 93px;
+  }
 }
 
 .inner-page__img {
   margin: 0 auto;
   padding-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding-bottom: 115px;
+  }
 }
 
 .inner-page__title-wrapper {
   padding: 39px 20px 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 160px 28px 160px;
+  }
 }
 
 .inner-page__title-wrapper--form {
   padding-top: 39px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
 }
 
 .inner-page__title {
@@ -25,6 +44,11 @@
   color: $black;
   padding-bottom: 29px;
   line-height: 1.44;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
 }
 
 .inner-page__intro {
@@ -37,6 +61,12 @@
 
 .inner-page__intro--form {
   padding: 0;
+}
+
+.inner-page__header {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .inner-page__header--form {

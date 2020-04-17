@@ -4,6 +4,12 @@
   align-items: center;
   padding: 28px 20px 23px 20px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 28px 60px 23px 60px;
+  }
 }
 
 .footer-main__hashtag {
@@ -13,6 +19,10 @@
   text-transform: uppercase;
   color: $black;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .footer-main__link {
@@ -43,6 +53,10 @@
 .footer-social {
   padding-top: 38px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer-social__list {
@@ -60,6 +74,11 @@
   justify-content: center;
   align-items: center;
   margin-right: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    margin-right: 7px;
+  }
 }
 
 .footer-social__item:nth-child(2) {
@@ -68,6 +87,10 @@
 
 .footer-social__item:last-child {
   margin-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 .footer-social__item:hover {

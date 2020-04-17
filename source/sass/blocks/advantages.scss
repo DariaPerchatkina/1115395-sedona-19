@@ -3,6 +3,14 @@
 }
 
 .advantages__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__list {
   text-align: center;
 }
 
@@ -37,6 +45,7 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    padding-bottom: 18px;
   }
 }
 
@@ -101,7 +110,8 @@
   object-position: center;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    width: auto;
     height: 256px;
+    flex-grow: 1;
   }
 }

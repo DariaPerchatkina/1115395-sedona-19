@@ -1,12 +1,52 @@
+.page-catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+}
+
+.page-catalog__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+}
+
 .page-catalog__item {
   position: relative;
   text-align: left;
   padding: 22px 20px 39px 20px;
   border-top: 1px solid $bh-gray;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 0;
+  }
+}
+
+.page-catalog__item--first {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 480px;
+  }
 }
 
 .page-catalog__item:last-child {
   border-bottom: 1px solid $bh-gray;
+}
+
+.page-catalog__img {
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    max-height: 267px;
+  }
+}
+
+.page-catalog__img--first {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    max-height: 400px;
+  }
 }
 
 .page-catalog__blockquote {
@@ -14,6 +54,11 @@
   text-align: left;
   margin: 0;
   padding-bottom: 11px;
+
+  @media (min-width:$tablet-width) {
+    min-height: 80px;
+    padding-left: 20px;
+  }
 }
 
 .page-catalog__text {
@@ -44,6 +89,11 @@
   font-weight: 700;
   line-height: 1.7;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    right: 21px;
+    bottom: 9px;
+  }
 }
 
 .page-catalog__button:last-child {
@@ -53,4 +103,11 @@
 .page-catalog__button::before {
   content: url("../img/icon-like.svg");
   margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -2px;
+    right: 32px;
+    margin-right: 10px;
+  }
 }
