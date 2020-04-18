@@ -8,6 +8,10 @@
     width: auto;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 // .main-nav__list {

@@ -3,15 +3,13 @@
 }
 
 .advantages__list {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.advantages__list {
-  text-align: center;
 }
 
 .advantages__item {
@@ -27,6 +25,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .advantages__wrapper {
@@ -38,6 +40,11 @@
     padding: 44px 27px 20px;
     flex-grow: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    padding: 52px 65px 55px 65px;
+  }
 }
 
 .advantages__wrapper--inner {
@@ -46,6 +53,10 @@
   @media (min-width: $tablet-width) {
     order: 2;
     padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 90px 30px 90px;
   }
 }
 
@@ -56,12 +67,19 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 256px;
     height: 256px;
-    align-items: center;
     text-align: center;
     padding-top: 45px;
     padding-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    padding: 45px 58px 57px;
   }
 }
 
@@ -72,6 +90,16 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.24;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 34px;
+  }
+}
+
+.advantages__title--inner {
+  @media (min-width: $desktop-width) {
+    padding: 0 64px;
   }
 }
 
@@ -87,10 +115,19 @@
     line-height: 1.5;
     padding: 22px 17px 20px 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 20px;
+  }
 }
 
 .advantages__description--inner {
   padding-top: 16px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+  }
 }
 
 .advantages__item--inner::after {

@@ -4,7 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 57px 157px 57px 157px;
     text-align: center;
-    text-align: -webkit-center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 370px 66px 370px;
   }
 }
 
@@ -19,6 +22,10 @@
     line-height: 0.87;
     padding-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .sentence__description {
@@ -31,6 +38,10 @@
   @media (min-width: $tablet-width) {
     line-height: 1.71;
     padding-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
   }
 }
 

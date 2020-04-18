@@ -32,11 +32,19 @@
     border: none;
     box-shadow: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
+  }
 }
 
 .site-list__item:nth-child(2) {
   @media (min-width: $tablet-width) {
     margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 250px;
   }
 }
 
