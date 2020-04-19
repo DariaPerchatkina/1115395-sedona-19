@@ -93,4 +93,8 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
+  }
 }

@@ -112,6 +112,10 @@
     flex-grow: 1;
     padding-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .contest-form__item {
@@ -280,6 +284,10 @@
     width: 324px;
     padding: 16px 75px 21px 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
 .contest-form__span {
@@ -314,6 +322,10 @@
     flex-wrap: wrap;
     padding: 0 94px 0px;
     max-height: 193px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -439,6 +451,10 @@
   @media (min-width: $tablet-width) {
     padding: 30px 120px 42px 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 300px 42px 300px;
+  }
 }
 
 .label-textarea {
@@ -449,6 +465,10 @@
     padding-top: 36px;
     margin: 0;
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
   }
 }
 
