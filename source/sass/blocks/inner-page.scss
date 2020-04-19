@@ -89,4 +89,8 @@
 
 .inner-page__header--form {
   padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 68px;
+  }
 }

@@ -69,7 +69,7 @@
           достопримечательностях</p>
       </div>
       <form class="contest-form" action="https://echo.htmlacademy.ru/">
-        <fieldset class="contest-form__block">
+        <fieldset class="contest-form__block contest-form__block--main">
           <legend class="contest-form__legend text">Представьтесь:</legend>
           <ul class="contest-form__list contest-form__list--main list">
             <li class="contest-form__item">
@@ -171,12 +171,13 @@
         </fieldset>
         <fieldset class="contest-form__text">
           <legend class="contest-form contest-form__legend label-textarea text">Опишите свои
-            эмоции</legend>
+            эмоции: </legend>
           <label class="visually-hidden" for="form-textarea">Отзыв посетителя</label>
           <textarea class="contest-form__textarea" rows="6" cols="29" name="text" id="form-textarea"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="contest-form__button btn-style" type="submit">Отправить отзыв</button>
+        <span class="contest-form__span text">* - Обязательные поля</span>
       </form>
     </section>
   </main>
