@@ -17,13 +17,18 @@
   }
 }
 
-.modal-show__seconde {
-  @media (min-width: $tablet-width) {
-    max-width: 640px;
-  }
-}
+// .modal-show__seconde {
+//   @media (min-width: $tablet-width) {
+//     max-width: 640px;
+//   }
 
 .modal-show__seconde {
+  display: block;
+  top: 100px;
+  left: calc(50% - 160px);
+  position: fixed;
+  background-color: $white;
+
   @media (min-width: $tablet-width) {
     max-width: 640px;
     left: calc(50% - 320px);
