@@ -54,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    padding-bottom: 47px;
   }
 }
 
@@ -67,6 +68,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    border-top: 1px solid $disabled-gray;
   }
 }
 
@@ -74,6 +76,11 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -32px;
+    border-top: 1px solid $disabled-gray;
   }
 }
 
@@ -115,6 +122,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-top: 29px;
+    border-top: 1px solid $disabled-gray;
   }
 }
 
@@ -305,6 +314,12 @@
   }
 }
 
+.contest-form__phone-span {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .contest-form__list--inner {
   text-align: left;
   padding: 0;
@@ -320,7 +335,7 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 94px 0px;
+    padding: 0 94px 0;
     max-height: 193px;
   }
 
@@ -338,6 +353,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding-left: 0;
+    align-items: baseline;
   }
 }
 
@@ -349,7 +366,8 @@
   padding-left: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 315px;
+    margin-left: 14px;
   }
 }
 
@@ -363,7 +381,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: fit-content;
+    width: 100%;
     flex-grow: 1;
   }
 }
@@ -382,8 +400,8 @@
   right: 0;
 
   @media (min-width: $desktop-width) {
-    top: 6px;
-    right: -13px;
+    top: 7px;
+    right: -3px;
   }
 }
 
@@ -427,22 +445,11 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 67px;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
-
-// .contest-form__legend--inner::after {
-//   content: "";
-
-// }
-// bottom: 14px;
-// content: "";
-// width: 648px;
-// height: 1px;
-// background-color: red;
-// position: absolute;
-// /* top: 5px; */
-// left: calc(50% - 324px);
-
 
 .contest-form__legend--checkbox {
   padding-bottom: 13px;
@@ -453,7 +460,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 7px 300px 42px 300px;
+    padding: 39px 60px 42px 60px;
+    width: 278px;
   }
 }
 
@@ -468,7 +476,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 33px;
+    padding-top: 5px;
   }
 }
 

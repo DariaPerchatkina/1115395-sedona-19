@@ -136,6 +136,12 @@
   }
 }
 
+.page-catalog__text--inner {
+  @media (min-width: $desktop-width) {
+    max-width: 1100px;
+  }
+}
+
 .page-catalog__autor {
   padding-top: 2px;
   font-weight: 400;
