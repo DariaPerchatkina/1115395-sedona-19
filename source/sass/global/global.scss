@@ -73,6 +73,10 @@ input[type="radio"].visually-hidden {
   align-items: center;
   border: none;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 
 .btn-style:hover {
@@ -93,6 +97,14 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
 }
 
 .text {

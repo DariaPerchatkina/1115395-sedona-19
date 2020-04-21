@@ -9,51 +9,59 @@
 </head>
 
 <body>
-
+  <svg style="display: none;">
+    <symbol id="icon-like" viewBox="0 0 22 20"  xmlns="http://www.w3.org/2000/svg">
+      <g id="Page-1">
+        <g id="Core" transform="translate(-295.000000, -464.000000)">
+          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+            <path id="Shape" fill="currentColor" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+          </g>
+        </g>
+      </g>
+    </symbol>
+  </svg>
   <header class="page-header container">
     <nav class="main-nav ">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list">
-          <li class="site-list__item site-list__item--active site-list__item--first">
-            <a class="site-list__link link" href="index.html">главная</a>
-            <button class="site-list__toggle btn" type="button">
-              <span class="visually-hidden">Закрытьы меню</span>
-              <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
-                y="0" width="22" height="22" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199"
-                xml:space="preserve">
-                <polygon
-                  points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
-              </svg>
-            </button>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link link">фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link link" href="form.html">форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
-          </li>
-        </ul>
-        <div class="page-header__wrapper">
-          <a class="page-header__logo">
-            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
-              alt="Путешествие в Седону">
-          </a>
-          <button class="page-header__trigger btn" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg fill="#81b3d2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0"
-              y="0" width="23" height="22" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
-              xml:space="preserve">
-              <g>
-                <rect width="22.928" height="3.964" />
-                <rect y="9.009" width="22.928" height="3.964" />
-                <rect y="18.018" width="22.928" height="3.964" />
-              </g>
-            </svg>
-          </button>
-        </div>
+      <button class="main-nav__toggle btn" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+        <svg class="page-header__svg" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="22" height="22" viewBox="0 0 22.199 22.199"
+          enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+          <polygon
+            points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
+        </svg>
+      </button>
+      <ul class="main-nav__list site-list list">
+        <li class="site-list__item site-list__item--active site-list__item--first">
+          <a class="site-list__link link" href="index.html">главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link link">фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link link" href="form.html">форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+        </li>
+      </ul>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo link" href="index.html">
+          <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
+            alt="Путешествие в Седону">
+        </a>
+        <button class="page-header__trigger btn" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="page-header__svg" fill="#81b3d2" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="22" height="22" viewBox="0 0 22.928 21.982"
+            enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964" />
+              <rect y="9.009" width="22.928" height="3.964" />
+              <rect y="18.018" width="22.928" height="3.964" />
+            </g>
+          </svg>
+        </button>
       </div>
     </nav>
   </header>
@@ -71,47 +79,76 @@
         <h3 class="visually-hidden">Фотографии пользователей</h3>
         <div class="page-catalog__wrapper">
           <ul class="page-catalog__list list">
-            <li class="page-catalog__item">
-              <a class="page-catalog__link link" href="#"></a>
-              <img class="page-catalog__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
-                alt="photo-1">
-              <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text text">Неродные просторы</p>
-                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Борис</cite></p>
-              </blockquote>
-              <button class="page-catalog__button btn">1350</button>
+            <li class="page-catalog__item page-catalog__item--first">
+              <a class="page-catalog__link link" href="#">
+              <img class="page-catalog__img page-catalog__img--first" src="img/photo-sunset-mobile@1x.jpg" width="280"
+                height="280" alt="photo-1">
+              </a>
+              <div class="page-catalog__blockquote-wrapper blockquote-wrapper">
+                <blockquote class="page-catalog__blockquote">
+                  <p class="page-catalog__text text">Неродные просторы</p>
+                  <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Борис</cite></p>
+                </blockquote>
+                <button class="page-catalog__button btn">
+                  <svg class="page-catalog__svg" width="22" height="20">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  1350
+                </button>
+              </div>
             </li>
             <li class="page-catalog__item">
-              <a class="page-catalog__link link" href="#"></a>
+              <a class="page-catalog__link link" href="#">
               <img class="page-catalog__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
                 alt="photo-2">
-              <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text text">Местная растительность</p>
-                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Сергей</cite></p>
-              </blockquote>
-              <button class="page-catalog__button btn">143</button>
+              </a>
+              <div class="page-catalog__blockquote-wrapper blockquote-wrapper blockquote-wrapper--other">
+                <blockquote class="page-catalog__blockquote">
+                  <p class="page-catalog__text text">Местная растительность</p>
+                  <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Сергей</cite></p>
+                </blockquote>
+                <button class="page-catalog__button btn">
+                  <svg class="page-catalog__svg" width="22" height="20">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  143
+                </button>
+              </div>
             </li>
             <li class="page-catalog__item">
               <a class="page-catalog__link link" href="#">
-                <img class="page-catalog__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
-                  alt="photo-3">
+              <img class="page-catalog__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="photo-3">
               </a>
-              <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text text">Дорога на север</p>
-                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Петр</cite></p>
-              </blockquote>
-              <button class="page-catalog__button btn">96</button>
+              <div class="page-catalog__blockquote-wrapper blockquote-wrapper blockquote-wrapper--another">
+                <blockquote class="page-catalog__blockquote">
+                  <p class="page-catalog__text text">Дорога на север</p>
+                  <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Петр</cite></p>
+                </blockquote>
+                <button class="page-catalog__button btn">
+                  <svg class="page-catalog__svg" width="22" height="20">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  96
+                </button>
+              </div>
             </li>
             <li class="page-catalog__item">
               <a class="page-catalog__link link" href="#">
-                <img class="page-catalog__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
-                  alt="photo-4">
+              <img class="page-catalog__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
+                alt="photo-4">
               </a>
-              <blockquote class="page-catalog__blockquote">
-                <p class="page-catalog__text text">Мост дьявола</p>
-                <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Антон</cite></p>
-              </blockquote>
-              <button class="page-catalog__button btn">254</button>
+                <div class="page-catalog__blockquote-wrapper blockquote-wrapper blockquote-wrapper--other">
+                <blockquote class="page-catalog__blockquote">
+                  <p class="page-catalog__text text">Мост дьявола</p>
+                  <p class="page-catalog__autor text">Автор фото: <cite class="page-catalog__cite"> Антон</cite></p>
+                </blockquote>
+                <button class="page-catalog__button btn">
+                  <svg class="page-catalog__svg" width="22" height="20">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  254
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -125,7 +162,7 @@
           очередной раз!</p>
       </div>
       <div class="presentation__video-wrapper">
-        <video class="presentation__video" width="320" poster="../img/video-mobile@1x.jpg">
+        <video class="presentation__video" width="320" poster="img/video-mobile@1x.jpg">
         </video>
         <div class="presentation__toggle-wrapper">
           <button class="presentation__toggle" type="button">

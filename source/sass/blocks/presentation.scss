@@ -1,6 +1,16 @@
 .presentation {
   padding-top: 32px;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 96px;
+  }
 }
 
 .presentation__title {
@@ -8,6 +18,11 @@
   font-weight: 700;
   color: $black;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
 }
 
 .presentation__description {
@@ -16,37 +31,74 @@
   color: $light-black;
   padding: 0 20px;
   line-height: 1.71;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .presentation__video {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .presentation__wrapper {
   padding: 0 20px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 380px;
+    padding-bottom: 70px;
+  }
 }
 
 .presentation__toggle {
   position: relative;
-  top: 9px;
+  top: 10px;
   right: 78px;
   border: none;
-  width: 7px;
-  height: 9px;
+  width: 8px;
+  height: 11px;
   border-radius: 50%;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+    right: 113px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 191px;
+  }
 }
 
 .presentation__toggle::after {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: calc(50% - 40px);
   width: 235px;
   height: 3px;
   background-color: $white;
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+    left: calc(50% - 120px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+    left: calc(50% - 115px);
+    top: 7px;
+  }
 }
 
 
@@ -54,6 +106,17 @@
   position: relative;
   width: 320px;
   height: 276px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 648px;
+    height: 573px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 501px;
+  }
 }
 
 .presentation__toggle-wrapper {
@@ -65,6 +128,17 @@
   margin: 0 auto;
   background-color: $black;
   opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 93px;
+    left: calc(50% - 324px);
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 400px);
+  }
 }
 
 .presentation__button-wrapper {
@@ -77,6 +151,21 @@
   margin: 0 auto;
   padding: 23px 23px 23px 25px;
   background-color: $bh-gray;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    left: calc(50% - 324px);
+    width: 648px;
+    height: 93px;
+    padding: 20px 40px 20px 35px;
+    background-color: $transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 400px);
+    width: 800px;
+    padding: 24px 40px 20px 35px;
+  }
 }
 
 .presentation__button {
@@ -84,6 +173,10 @@
   background-color: $transparent;
   fill: $toggle-gray;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+  }
 }
 
 .presentation__button:hover {
@@ -97,6 +190,14 @@
 
 .presentation__replay {
   margin-right: 133px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 473px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 623px;
+  }
 }
 
 .presentation__subtitles {

@@ -4,19 +4,56 @@
   background-size: auto;
   padding-top: 90px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include bg-img("bg-back-tablet@1x.jpg");
+    background-position: top center;
+    padding-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include bg-img("bg-back-desktop@1x.jpg");
+  }
 }
 
 .main-page__header {
   padding: 0 20px;
-  margin-bottom: 42px;
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .main-page__img {
   padding-bottom: 125px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 91px;
+  }
 }
 
 .main-page__title-wrapper {
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 335px 10px;
+  }
 }
 
 .main-page__block {
@@ -30,6 +67,12 @@
   padding-bottom: 29px;
   line-height: 1.45;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.19;
+    padding-bottom: 31px;
+  }
 }
 
 .main-page__intro {

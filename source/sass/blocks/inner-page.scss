@@ -3,28 +3,70 @@
   background-position: top -232px right -224px;
   background-size: auto;
   padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    @include bg-img("bg-back-tablet@1x.jpg");
+    background-position: top -230px center;
+    padding-top: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include bg-img("bg-back-desktop@1x.jpg");
+    background-position: top -220px center;
+    padding-top: 100px;
+  }
 }
 
 .inner-page__img {
   margin: 0 auto;
   padding-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding-bottom: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 118px;
+  }
 }
 
 .inner-page__title-wrapper {
-  padding: 37px 20px 28px 20px;
+  padding: 39px 20px 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 160px 28px 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 105px 370px 28px 370px;
+  }
 }
 
 .inner-page__title-wrapper--form {
   padding-top: 39px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 105px 380px 28px 380px;
+  }
 }
 
 .inner-page__title {
   font-size: 18px;
   font-weight: 700;
   color: $black;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   line-height: 1.44;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
 }
 
 .inner-page__intro {
@@ -37,6 +79,12 @@
 
 .inner-page__intro--form {
   padding: 0;
+}
+
+.inner-page__header {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .inner-page__header--form {

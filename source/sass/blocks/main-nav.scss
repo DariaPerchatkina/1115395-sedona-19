@@ -1,8 +1,34 @@
 .main-nav {
+  position: relative;
+  min-height: 276px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    width: auto;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
-.main-nav__list {
-  background-color: $header-bg;
-  color: $white;
+// .main-nav__list {
+//   position: relative;
+// }
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  background-size: 23px;
+  width: 55px;
+  height: 55px;
+  background-color: $transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
