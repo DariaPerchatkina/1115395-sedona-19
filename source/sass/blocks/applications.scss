@@ -98,7 +98,7 @@
 }
 
 .applications__item--housing::after {
-  background-image: url("../img/icon-house.svg");
+  @include bg-img("icon-house.svg");
   position: absolute;
   left: -47px;
   top: -7px;
@@ -125,7 +125,7 @@
 }
 
 .applications__item--souvenirs::after {
-  background-image: url("../img/icon-gift.svg");
+  @include bg-img("icon-gift.svg");
   position: absolute;
   left: -44px;
   top: -8px;
@@ -141,7 +141,7 @@
 }
 
 .applications__item--food::after {
-  background-image: url("../img/icon-burger.svg");
+  @include bg-img("icon-burger.svg");
   position: absolute;
   left: -50px;
   top: -2px;
