@@ -91,10 +91,11 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.24;
+    padding: 0 26px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 34px;
+    padding: 0 35px;
   }
 }
 
@@ -124,7 +125,7 @@
 }
 
 .advantages__description--inner {
-  padding-top: 16px;
+  padding: 22px 10px;
 
   @media (min-width: $desktop-width) {
     padding-top: 24px;
@@ -140,10 +141,14 @@
   height: 1px;
   background-color: $gray;
   opacity: 0.1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__img {
-  height: 256px;
+  height: 260px;
   object-fit: cover;
   object-position: center;
 
