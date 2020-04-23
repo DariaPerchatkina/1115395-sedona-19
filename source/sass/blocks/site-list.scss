@@ -55,3 +55,12 @@
     margin-right: 5px;
   }
 }
+
+.site-list__item:hover {
+  background-color: $aquamarine;
+}
+
+.site-list__item:active {
+  background-color: $gray-blue;
+  color: $ligth-white;
+}
