@@ -74,13 +74,13 @@
     max-width: 256px;
     height: 256px;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 400px;
-    padding: 45px 58px 57px;
+    padding: 45px 25px 57px;
   }
 }
 
@@ -101,7 +101,7 @@
 
 .advantages__title--inner {
   @media (min-width: $desktop-width) {
-    padding: 0 64px;
+    padding: 0px 100px;
   }
 }
 
@@ -127,8 +127,36 @@
 .advantages__description--inner {
   padding: 22px 10px;
 
+  @media (min-width: $tablet-width) {
+    line-height: 1.6;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 24px;
+  }
+}
+
+.advantages__description--road {
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    padding-right: 37px;
+  }
+}
+
+.advantages__description--tourists {
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
+    padding-right: 12px;
   }
 }
 

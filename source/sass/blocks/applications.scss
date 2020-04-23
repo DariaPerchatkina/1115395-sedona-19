@@ -33,6 +33,12 @@
   }
 }
 
+.applications__title--housing {
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
 .applications__list {
   display: flex;
   flex-direction: column;
@@ -64,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 290px;
+    min-width: 343px;
     padding-right: 0;
     padding-top: 99px;
     margin: 0;
@@ -79,7 +85,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: -21px;
+    padding-right: 40px;
+    margin-right: -33px;
   }
 }
 
@@ -124,6 +131,7 @@
   @media (min-width: $desktop-width) {
     max-width: 195px;
     padding-right: 23px;
+    padding-left: 61px;
   }
 }
 
@@ -139,8 +147,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 104px;
+    left: 157px;
     top: -3px;
+  }
+}
+
+.applications__description--souvenirs {
+  @media (min-width: $desktop-width) {
+    width: 214px;
+    padding-left: 12px;
+    padding-right: 10px;
   }
 }
 
@@ -156,7 +172,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 97px;
+    left: 117px;
     top: 2px;
   }
 }
