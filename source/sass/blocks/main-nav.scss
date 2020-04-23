@@ -47,3 +47,55 @@
 //   background-color: rgba(255, 255, 255, 0.3);
 //   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 // }
+
+// .main-nav__toggle {
+//   position: absolute;
+//   right: 20px;
+//   top: 17px;
+
+//   width: 23px;
+//   height: 23px;
+
+//   font-size: 0;
+
+//   background-color: transparent;
+//   background-image: url("../img/icon-cross.svg");
+//   background-repeat: no-repeat;
+//   outline: none;
+//   border: none;
+
+//   @media (min-width: @tablet-width) {
+//     display: none;
+//   }
+// }
+
+// .main-nav__logo-image {
+//   @media (min-width: @tablet-width) {
+//     width: 102px;
+//     height: 84px;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     width: 187px;
+//     height: 97px;
+//   }
+// }
+
+// .main-nav--close:not(.main-nav--nojs) .main-nav__toggle {
+//   right: 20px;
+//   top: auto;
+//   bottom: 53px;
+//   background-image: url("../img/icon-menu.svg");
+// }
+
+// .main-nav--close:not(.main-nav--nojs) .main-nav__list {
+//   @media (max-width: @mobile-width) {
+//     position: absolute;
+
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+
+//     clip: rect(0 0 0 0);
+//   }
+// }

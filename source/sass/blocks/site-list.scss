@@ -17,15 +17,11 @@
   line-height: 2.22;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
   border-top: 1px solid $gray;
   box-shadow: 0 1px 0 0 $top-shadow, inset 0 1px 0 0 $bottom-shadow;
 
   @media (min-width: $tablet-width) {
     width: 153px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-size: 14px;
     line-height: 1.86;
     color: $black;
@@ -56,11 +52,21 @@
   }
 }
 
-.site-list__item:hover {
+.site-list__link {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.site-list__link:hover {
   background-color: $aquamarine;
 }
 
-.site-list__item:active {
+.site-list__link:active {
   background-color: $gray-blue;
   color: $ligth-white;
 }
