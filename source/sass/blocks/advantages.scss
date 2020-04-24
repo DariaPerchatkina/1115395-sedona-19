@@ -74,13 +74,13 @@
     max-width: 256px;
     height: 256px;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 400px;
-    padding: 45px 58px 57px;
+    padding: 45px 25px 57px;
   }
 }
 
@@ -91,16 +91,17 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.24;
+    padding: 0 26px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 34px;
+    padding: 0 35px;
   }
 }
 
 .advantages__title--inner {
   @media (min-width: $desktop-width) {
-    padding: 0 64px;
+    padding: 0 100px;
   }
 }
 
@@ -124,10 +125,38 @@
 }
 
 .advantages__description--inner {
-  padding-top: 16px;
+  padding: 22px 10px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.6;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 24px;
+  }
+}
+
+.advantages__description--road {
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    padding-right: 37px;
+  }
+}
+
+.advantages__description--tourists {
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
+    padding-right: 12px;
   }
 }
 
@@ -140,10 +169,14 @@
   height: 1px;
   background-color: $gray;
   opacity: 0.1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__img {
-  height: 256px;
+  height: 260px;
   object-fit: cover;
   object-position: center;
 

@@ -48,11 +48,18 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     padding-top: 67px;
+    padding-bottom: 19px;
+    max-width: 439px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 105px 380px 28px 380px;
+    padding-top: 105px;
+    padding-bottom: 28px;
+    max-width: 440px;
+    margin: 0 auto;
   }
 }
 
@@ -89,4 +96,12 @@
 
 .inner-page__header--form {
   padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
+  }
 }
