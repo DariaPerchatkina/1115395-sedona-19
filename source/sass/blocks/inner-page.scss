@@ -48,12 +48,17 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     padding-top: 67px;
+    padding-bottom: 19px;
+    max-width: 439px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 105px 34px 28px 20px;
-    max-width: 493px;
+    padding-top: 105px;
+    padding-bottom: 28px;
+    max-width: 440px;
     margin: 0 auto;
   }
 }

@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 250px;
+    margin-right: 243px;
   }
 }
 
@@ -49,6 +49,10 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
