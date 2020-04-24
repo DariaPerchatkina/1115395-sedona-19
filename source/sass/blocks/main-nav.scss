@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
-  min-height: 276px;
-  background-color: $white;
+  min-height: 56px;
+  // height: 223px;
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
@@ -18,11 +18,12 @@
   display: block;
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0;
   background-size: 23px;
-  width: 55px;
+  width: 63px;
   height: 55px;
   background-color: $transparent;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -33,69 +34,61 @@
   content: "";
 
   position: absolute;
-  top: 19px;
-  left: 16px;
-
+  top: 17px;
+  left: 20px;
   width: 23px;
-  height: 3px;
+  height: 4px;
+  z-index: 2;
 
-  // background-color: $white;
-  // box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  background-color: $header-bg;
+  box-shadow: 0 8px 0 0 $header-bg, 0 16px 0 0 $header-bg;
 }
 
-// .main-nav--closed .main-nav__toggle:active::before {
-//   background-color: rgba(255, 255, 255, 0.3);
-//   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
-// }
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  left: 264px;
+  width: 55px;
+  height: 55px;
 
-// .main-nav__toggle {
-//   position: absolute;
-//   right: 20px;
-//   top: 17px;
+  &::before,
+  &::after {
+    content: "";
 
-//   width: 23px;
-//   height: 23px;
+    position: absolute;
+    top: 26px;
+    left: 11px;
+    width: 28px;
+    height: 4px;
 
-//   font-size: 0;
+    background-color: $white;
+  }
 
-//   background-color: transparent;
-//   background-image: url("../img/icon-cross.svg");
-//   background-repeat: no-repeat;
-//   outline: none;
-//   border: none;
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
 
-//   @media (min-width: @tablet-width) {
-//     display: none;
-//   }
-// }
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-// .main-nav__logo-image {
-//   @media (min-width: @tablet-width) {
-//     width: 102px;
-//     height: 84px;
-//   }
+  &:active::before,
+  &:active::after {
+    background-color: $white;
+  }
+}
 
-//   @media (min-width: @desktop-width) {
-//     width: 187px;
-//     height: 97px;
-//   }
-// }
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+    min-height: 58px;
+  }
 
-// .main-nav--close:not(.main-nav--nojs) .main-nav__toggle {
-//   right: 20px;
-//   top: auto;
-//   bottom: 53px;
-//   background-image: url("../img/icon-menu.svg");
-// }
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
 
-// .main-nav--close:not(.main-nav--nojs) .main-nav__list {
-//   @media (max-width: @mobile-width) {
-//     position: absolute;
-
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-
-//     clip: rect(0 0 0 0);
-//   }
-// }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
