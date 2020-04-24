@@ -58,3 +58,11 @@
     margin: 0 auto;
   }
 }
+
+.sentence__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
