@@ -6,7 +6,7 @@
   padding-bottom: 10px;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     @include bg-img("bg-back-mobile@2x.jpg");
     background-size: 768px auto;
     background-position: -225px 0;
@@ -18,7 +18,7 @@
     padding-top: 77px;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       @include bg-img("bg-back-tablet@2x.jpg");
     }
   }
@@ -28,7 +28,7 @@
     background-size: 1200px auto;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       @include bg-img("bg-back-desktop@2x.jpg");
     }
   }
