@@ -3,6 +3,9 @@
   flex-direction: column;
   background-color: $header-bg;
   color: $white;
+  // min-height: 223px;
+  overflow: hidden;
+  transition: 300ms;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -17,15 +20,11 @@
   line-height: 2.22;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
   border-top: 1px solid $gray;
   box-shadow: 0 1px 0 0 $top-shadow, inset 0 1px 0 0 $bottom-shadow;
 
   @media (min-width: $tablet-width) {
     width: 153px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-size: 14px;
     line-height: 1.86;
     color: $black;
@@ -35,6 +34,45 @@
 
   @media (min-width: $desktop-width) {
     width: 243px;
+  }
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    color: $header-bg;
+    background-color: $white;
+  }
+}
+
+.site-list__item:active {
+  background-color: $gray-blue;
+  color: $ligth-white;
+
+  @media (min-width: $tablet-width) {
+    color: $black-translucet;
+    background-color: $white;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    color: $brown;
+  }
+}
+
+.site-list__item--active:hover,
+.site-list__item--active:focus {
+  @media (min-width: $tablet-width) {
+    color: $dark-brown;
+  }
+}
+
+.site-list__item--active:active {
+  @media (min-width: $tablet-width) {
+    color: $ligth-gray-brown;
   }
 }
 
@@ -57,5 +95,15 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+}
+
+.site-list__link {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
