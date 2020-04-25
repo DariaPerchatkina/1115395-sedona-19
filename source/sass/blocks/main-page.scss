@@ -64,6 +64,7 @@
 
 .main-page__title-wrapper {
   padding: 0 10px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0 120px;
@@ -71,6 +72,25 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 335px 10px;
+  }
+}
+
+.main-page__title-wrapper::before {
+  content: url("../img/bg-intro-triangle-mobile.svg");
+  position: absolute;
+  top: -65px;
+  left: calc(50% - 160px);
+
+  @media (min-width: $tablet-width) {
+    content: url("../img/bg-intro-triangle-tablet.svg");
+    top: -107px;
+    left: calc(50% - 384px);
+  }
+
+  @media (min-width: $desktop-width) {
+    content: url("../img/bg-intro-triangle-desktop.svg");
+    top: -55px;
+    left: calc(50% - 600px);
   }
 }
 
