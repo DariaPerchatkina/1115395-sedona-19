@@ -152,11 +152,25 @@
   }
 }
 
+.applications__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.44;
+  color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
+  }
+}
+
 .applications__description--souvenirs {
   @media (min-width: $desktop-width) {
-    width: 214px;
     padding-left: 12px;
-    padding-right: 10px;
+    padding-right: 47px;
   }
 }
 
@@ -177,24 +191,10 @@
   }
 }
 
-.applications__description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.44;
-  color: $light-black;
-
-  @media (min-width: $tablet-width) {
-    line-height: 1.5;
-  }
+.applications__br {
+  display:none;
 
   @media (min-width: $desktop-width) {
-    width: 290px;
+    display: block;
   }
 }
-
-// .applications__description:nth-child(2) {
-//   @media (min-width: $desktop-width) {
-//     padding-left: 58px;
-//     padding-right: 23px;
-//   }
-// }

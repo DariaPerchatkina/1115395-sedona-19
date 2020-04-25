@@ -30,8 +30,12 @@
       </ul>
       <div class="page-header__wrapper">
         <a class="page-header__logo link" href="index.html">
-          <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
-            alt="Путешествие в Седону">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
+              alt="Путешествие в Седону">
+          </picture>
         </a>
       </div>
     </nav>

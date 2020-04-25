@@ -30,8 +30,12 @@
       </ul>
       <div class="page-header__wrapper">
         <a class="page-header__logo link">
-          <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
-            alt="Путешествие в Седону">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
+              alt="Путешествие в Седону">
+          </picture>
         </a>
       </div>
     </nav>
@@ -54,8 +58,12 @@
             <span class="advantages__number">— №1 —</span>
             <p class="advantages__description text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260"
-            alt="фоновая картинка">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+            <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260"
+             srcset="img/main-city-mobile@2x.jpg 2x" alt="фоновая картинка">
+          </picture>
           <div class="applications">
             <ul class="applications__list list">
               <li class="applications__item applications__item--housing">
@@ -64,7 +72,7 @@
               </li>
               <li class="applications__item applications__item--souvenirs">
                 <h3 class="applications__title text">Сувениры</h3>
-                <p class="applications__description applications__description--souvenirs text">Не только китайского, но и местного производства!</p>
+                <p class="applications__description applications__description--souvenirs text">Не только китайского,<br class="applications__br"> но и местного производства!</p>
               </li>
               <li class="applications__item applications__item--food">
                 <h3 class="applications__title text">Еда</h3>
@@ -79,7 +87,12 @@
             <span class="advantages__number">— №2 —</span>
             <p class="advantages__description text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__img" src="img/photo-bridge-1-x.png" width="320" height="260" alt="Мост Дьявола">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"
+             srcset="img/main-bridge-mobile@2x.jpg 2x" alt="фоновая картинка">
+          </picture>
         </li>
         <li class="advantages__item  advantages__item--inner">
           <h3 class="advantages__title advantages__title--inner text">Небольшая площадь</h3>
@@ -110,7 +123,11 @@
           в Седоне</p>
         <a class="sentence__link link btn-style" href="search.html">Найти гостиницу</a>
       </div>
-      <img class="sentence__map" src="img/map-marker-mobil.jpg" alt="map">
+      <picture class="sentence__picture">
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="sentence__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="map">
+      </picture>
       <span class="visually-hidden"> Карта </span>
     </section>
   </main>

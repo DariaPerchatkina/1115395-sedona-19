@@ -4,16 +4,35 @@
   background-size: auto;
   padding-top: 50px;
 
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    @include bg-img("bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+    background-position: -225px -232px;
+  }
+
   @media (min-width: $tablet-width) {
     @include bg-img("bg-back-tablet@1x.jpg");
     background-position: top -230px center;
     padding-top: 93px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        @include bg-img("bg-back-tablet@2x.jpg");
+      }
   }
 
   @media (min-width: $desktop-width) {
     @include bg-img("bg-back-desktop@1x.jpg");
-    background-position: top -220px center;
+    background-position-x: 0px;
+    background-position-y: -218px;
     padding-top: 100px;
+    background-size: 100%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        @include bg-img("bg-back-desktop@2x.jpg");
+      }
   }
 }
 
