@@ -103,15 +103,17 @@
 
 .footer-social__item:active {
   background-color: $dark-blue;
-  color: $ligth-white;
-  opacity: 0.3;
-}
-
-.footer-social__item:disabled {
-  background-color: $hover-gray;
 }
 
 .footer-social__link--svg {
   text-align: center;
   align-items: center;
+}
+
+.footer-social__link:active {
+  opacity: 0.3;
+}
+
+.footer-social__item:disabled {
+  background-color: $hover-gray;
 }

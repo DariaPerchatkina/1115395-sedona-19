@@ -7,7 +7,9 @@
 }
 
 .page-header__wrapper {
+  position: relative;
   min-height: 56px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     min-height: 0;
@@ -16,11 +18,9 @@
 
 .page-header__trigger {
   display: block;
-  position: absolute;
-  top: 222px;
-  left: 261px;
+  margin-left: auto;
   background-size: 22px;
-  width: 56px;
+  width: 63px;
   height: 56px;
   background-color: $transparent;
 
@@ -29,13 +29,20 @@
   }
 }
 
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 51px);
+
+  @media (min-width: $tablet-width) {
+    margin-top: -56px;
+  }
+}
+
 .page-header__img {
   margin: 0 auto;
-  position: absolute;
   text-align: center;
-  top: 223px;
-  left: calc(50% - 51px);
-  z-index: 2;
+  // top: 223px;
 
   @media (min-width: $tablet-width) {
     top: 0;

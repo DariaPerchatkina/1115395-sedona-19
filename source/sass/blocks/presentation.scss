@@ -180,13 +180,24 @@
   }
 }
 
-.presentation__button:hover {
+.presentation__button:hover,
+.presentation__button:focus {
   fill: $light-black;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.6;
+  }
 }
 
-.presentation__button:disabled {
+.presentation__button:active {
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+    opacity: 0.3;
+  }
 }
 
 .presentation__replay {

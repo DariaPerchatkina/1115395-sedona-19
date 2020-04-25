@@ -10,18 +10,12 @@
 
 <body>
   <header class="page-header container">
-    <nav class="main-nav ">
-      <button class="main-nav__toggle btn" type="button">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle btn" type="button" tabindex="0">
         <span class="visually-hidden">Закрыть меню</span>
-        <svg class="page-header__svg" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="22" height="22" viewBox="0 0 22.199 22.199"
-          enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-          <polygon
-            points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
-        </svg>
       </button>
       <ul class="main-nav__list site-list list">
-        <li class="site-list__item site-list__item--active site-list__item--first">
+        <li class="site-list__item site-list__item--first">
           <a class="site-list__link link" href="index.html">главная</a>
         </li>
         <li class="site-list__item">
@@ -39,23 +33,9 @@
           <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
             alt="Путешествие в Седону">
         </a>
-        <button class="page-header__trigger btn" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="page-header__svg" fill="#81b3d2" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="22" height="22" viewBox="0 0 22.928 21.982"
-            enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-            <g>
-              <rect width="22.928" height="3.964" />
-              <rect y="9.009" width="22.928" height="3.964" />
-              <rect y="18.018" width="22.928" height="3.964" />
-            </g>
-          </svg>
-        </button>
       </div>
     </nav>
   </header>
-
-
 
   <main class="inner-page container">
     <h1 class="visually-hidden">Ваш отзыв</h1>
@@ -75,13 +55,13 @@
             <li class="contest-form__item">
               <label class="contest-form__label text" for="appointment-family">Имя*:
                 <input class="contest-form__input contest-form__input--main" id="appointment-family" type="text"
-                  name="family" placeholder="Петр">
+                  name="family" placeholder="Петр" required>
               </label>
             </li>
             <li class="contest-form__item">
               <label class="contest-form__label text" for="appointment-name">Фамилия*:
                 <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text"
-                  name="name" placeholder="Иванов">
+                  name="name" placeholder="Иванов" required>
               </label>
             </li>
             <li class="contest-form__item">
@@ -99,8 +79,8 @@
               <label class="contest-form__label contest-form__label--inner contest-form__label--phone text"
                 for="appointment-tel"><span class="contest-form__phone-span">Контактный</span>
                 телефон*:
-                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="text"
-                  name="tel" placeholder="Введите телефон">
+                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="tel"
+                  name="tel" placeholder="Введите телефон" required>
               </label>
             </li>
             <li class="contest-form__item contest-form__item--inner contest-form__item--email">
@@ -108,7 +88,7 @@
                 for="appointment-email">Электронная
                 почта*:
                 <input class="contest-form__input contest-form__input--inner" id="appointment-email" type="email"
-                  name="email" placeholder="Введите e-mail">
+                  name="email" placeholder="Введите e-mail" required>
               </label>
             </li>
           </ul>
@@ -187,7 +167,7 @@
     <div class="footer-social">
       <ul class="footer-social__list list">
         <li class="footer-social__item">
-          <a class="footer-social__link">
+          <a class="footer-social__link link">
             <span class="visually-hidden">twitter</span>
             <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="18" height="15" fill="#ffffff"
@@ -202,7 +182,7 @@
           </a>
         </li>
         <li class="footer-social__item">
-          <a class="footer-social__link">
+          <a class="footer-social__link link">
             <span class="visually-hidden">Facebook</span>
             <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="9" height="19" fill="#ffffff"
@@ -213,7 +193,7 @@
           </a>
         </li>
         <li class="footer-social__item">
-          <a class="footer-social__link">
+          <a class="footer-social__link link">
             <span class="visually-hidden">YouTube</span>
             <svg class="footer-social__link footer-social__link--svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="20" height="14" fill="#ffffff"
@@ -249,6 +229,8 @@
       <button class="modal__btn modal__btn--close btn-style" type="button">Закрыть окно</button>
     </div>
   </section>
+
+  <script src="js/open-menu.js"></script>
 
 </body>
 

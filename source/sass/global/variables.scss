@@ -7,7 +7,7 @@ $top-shadow: rgba(1, 1, 1, 0.2);
 $bottom-shadow: rgba(255, 255, 255, 0.2);
 $light-black:#333333;
 $black:#000000;
-$black-translucet: 	hsla(0, 0%, 0%, 0.3);
+$black-translucet: 	hsla(0%, 0%, 0%, 0.3);
 $gray: #646e7a;
 $bh-gray:#f2f2f2;
 $header-bc: #accef5;
@@ -18,10 +18,15 @@ $middle-blue: #669ec0;
 $dark-blue: #5496bd;
 $toggle-gray: #5c6870;
 $middle-gray: #eaeaea;
-
+$aquamarine: #669ec0;
+$gray-blue: #5496bd;
+$brown: #766357;
+$dark-brown: #604e43;
+$ligth-gray-brown: rgba(118, 99, 87, 0.3);
 
 //размеры
 $width-mobile: 320px;
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
