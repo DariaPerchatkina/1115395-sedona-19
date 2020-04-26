@@ -111,13 +111,7 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
-    content: url("../img/bg-intro-triangle-tablet.svg");
-    top: -107px;
-  }
-
-  @media (min-width: $desktop-width) {
-    content: url("../img/bg-intro-triangle-desktop.svg");
-    top: -55px;
+    display: none;
   }
 }
 
