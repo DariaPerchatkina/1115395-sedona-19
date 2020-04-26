@@ -51,6 +51,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 170px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,7 +112,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 648px;
-    height: 573px;
+    height: 499px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,7 +135,7 @@
     width: 100%;
     height: 93px;
     left: calc(50% - 324px);
-    bottom: 0;
+    bottom: -1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,7 +155,7 @@
   background-color: $bh-gray;
 
   @media (min-width: $tablet-width) {
-    bottom: 0;
+    bottom: -2px;
     left: calc(50% - 324px);
     width: 648px;
     height: 93px;

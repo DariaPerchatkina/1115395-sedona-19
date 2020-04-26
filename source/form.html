@@ -30,8 +30,12 @@
       </ul>
       <div class="page-header__wrapper">
         <a class="page-header__logo link" href="index.html">
-          <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
-            alt="Путешествие в Седону">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
+              alt="Путешествие в Седону">
+          </picture>
         </a>
       </div>
     </nav>
@@ -41,7 +45,7 @@
     <h1 class="visually-hidden">Ваш отзыв</h1>
     <section class="inner-page__header inner-page__header--form ">
       <img class="inner-page__img" src="img/text-sedona.svg" width="229" height="39" alt="Логотип последующие">
-      <div class="inner-page__title-wrapper inner-page__title-wrapper--form">
+      <div class="inner-page__title-wrapper inner-page__title-wrapper--form triangle triangle--inner">
         <h2 class="inner-page__title text">Оставьте свой отзыв</h2>
         <p class="inner-page__intro inner-page__intro--form text"> Помогите нашим отелям стать лучше! оставьте отзыв о
           них, а
@@ -79,8 +83,8 @@
               <label class="contest-form__label contest-form__label--inner contest-form__label--phone text"
                 for="appointment-tel"><span class="contest-form__phone-span">Контактный</span>
                 телефон*:
-                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="tel"
-                  name="tel" placeholder="Введите телефон" required>
+                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="tel" name="tel"
+                  placeholder="Введите телефон" required>
               </label>
             </li>
             <li class="contest-form__item contest-form__item--inner contest-form__item--email">
@@ -230,7 +234,7 @@
     </div>
   </section>
 
-  <script src="js/open-menu.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 

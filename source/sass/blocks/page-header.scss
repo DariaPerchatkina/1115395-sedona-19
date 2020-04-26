@@ -37,15 +37,25 @@
   @media (min-width: $tablet-width) {
     margin-top: -56px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 188px;
+    height: 96px;
+    left: calc(50% - 94px);
+  }
 }
 
 .page-header__img {
   margin: 0 auto;
   text-align: center;
-  // top: 223px;
 
   @media (min-width: $tablet-width) {
     top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 188px;
+    height: 96px;
   }
 }
 

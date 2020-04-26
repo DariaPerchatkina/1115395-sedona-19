@@ -59,7 +59,29 @@
   }
 }
 
-.sentence__br {
+.sentence__picture {
+  position: relative;
+}
+
+.sentence__picture::before {
+  content: url("../img/icon-map-marker.svg");
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  z-index: 3;
+  top: 160px;
+  left: calc(50% - 13px);
+
+  @media (min-width: $tablet-width) {
+    top: 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 161px;
+  }
+}
+
+.sentence__line-breake {
   display: none;
 
   @media (min-width: $tablet-width) {
