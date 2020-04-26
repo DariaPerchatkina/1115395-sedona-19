@@ -1,5 +1,12 @@
 .advantages {
   background-color: $header-bg;
+  margin-top: -15px;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .advantages__list {
@@ -65,7 +72,6 @@
 .advantages__item--inner {
   position: relative;
   padding: 26px 35px 11px;
-  // padding: 26px 35px 29px;
   background-color: $bh-gray;
   color: $black;
 

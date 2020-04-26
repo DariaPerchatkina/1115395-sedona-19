@@ -81,17 +81,7 @@
   }
 }
 
-// .sentence__map::after {
-//   content: url("../img/icon-map-marker.svg");
-//   display: block;
-//   width: 27px;
-//   height: 27px;
-//   position: absolute;
-//   top: 0;
-//   left: calc(50% - 13px);
-// }
-
-.sentence__br {
+.sentence__line-breake {
   display: none;
 
   @media (min-width: $tablet-width) {
