@@ -105,15 +105,16 @@
   background-color: $dark-blue;
 }
 
-.footer-social__link--svg {
+.footer-social__link-icon {
+  fill: $white;
   text-align: center;
   align-items: center;
 }
 
-.footer-social__link:active {
+.footer-social__link-icon:active {
   opacity: 0.3;
 }
 
-.footer-social__item:disabled {
+.footer-social__link-icon:disabled {
   background-color: $hover-gray;
 }
