@@ -93,14 +93,16 @@
 }
 
 .triangle--inner::before {
-  top: -26px;
+  top: -25px;
 
   @media (min-width: $tablet-width) {
     top: -56px;
+    left: calc(50% - 342px);
   }
 
   @media (min-width: $desktop-width) {
-    top: -54px;
+    top: -53px;
+    left: calc(50% - 600px);
   }
 }
 
