@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -60,6 +61,11 @@
           </div>
           <picture>
             <source media="(min-width: 1200px)"
+              srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
               srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
             <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260"
@@ -90,6 +96,11 @@
             <p class="advantages__description text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)"
               srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -132,6 +143,11 @@
         <a class="sentence__link link btn-style" href="search.html">Найти гостиницу</a>
       </div>
       <picture class="sentence__picture">
+        <source media="(min-width: 1200px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
         <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
         <img class="sentence__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="map">
@@ -176,7 +192,6 @@
     </a>
   </footer>
 
-  <script src="js/picturefill.js"></script>
   <script src="js/index.js"></script>
 
 </body>
