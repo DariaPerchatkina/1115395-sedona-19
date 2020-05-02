@@ -65,10 +65,11 @@
   top: 10px;
   right: 78px;
   border: none;
-  width: 8px;
+  width: 11px;
   height: 11px;
   border-radius: 50%;
   background-color: $white;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     top: 32px;
