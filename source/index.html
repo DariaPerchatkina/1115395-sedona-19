@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -68,7 +68,7 @@
             <source media="(min-width: 1200px)"
               srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-            <img class="advantages__img" src="img/main-city-mobile@1x.jpg" width="320" height="260"
+            <img class="advantages__img advantages__img--poly" src="img/main-city-mobile@1x.jpg" width="320" height="260"
               srcset="img/main-city-mobile@2x.jpg 2x" alt="Седона">
           </picture>
           <div class="applications">
@@ -105,7 +105,7 @@
               srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-            <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"
+            <img class="advantages__img advantages__img--poly" src="img/main-bridge-mobile@1x.jpg" width="320" height="260"
               srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
           </picture>
         </li>
@@ -196,6 +196,10 @@
   </footer>
 
   <script src="js/index.js"></script>
+  <script src="js/object-fit-images.min.js"></script>
+  <script>
+    objectFitImages();
+  </script>
 
 </body>
 
