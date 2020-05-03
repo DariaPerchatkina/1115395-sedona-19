@@ -117,7 +117,6 @@
   margin-right: 2px;
 
   @media (min-width: $tablet-width) {
-    // margin-right: 13px;
     margin-right: 0;
   }
 
@@ -132,18 +131,12 @@
 
 .footer-social__link:active {
   background-color: $dark-blue;
-}
-
-.footer-social__link--icon {
-  fill: $white;
-  text-align: center;
-  align-items: center;
-}
-
-.footer-social__link--icon:active {
   opacity: 0.3;
 }
 
-.footer-social__link--icon:disabled {
-  background-color: $hover-gray;
+.footer-social__icon {
+  display: block;
+  fill: $white;
+  text-align: center;
+  align-items: center;
 }
