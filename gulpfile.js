@@ -28,7 +28,7 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    // .pipe(server.stream());
+    .pipe(server.stream());
 });
 
 gulp.task("sprite", function () {
@@ -85,6 +85,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "images",
+  "webp",
   "html"
 ));
 
