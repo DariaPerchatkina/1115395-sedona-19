@@ -131,6 +131,9 @@
 
 .footer-social__link:active {
   background-color: $dark-blue;
+}
+
+.footer-social__link:active svg {
   opacity: 0.3;
 }
 

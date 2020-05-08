@@ -63,6 +63,13 @@
   position: relative;
 }
 
+.sentence__iframe {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+}
+
 .sentence__picture::before {
   content: url("../img/icon-map-marker.svg");
   position: absolute;
