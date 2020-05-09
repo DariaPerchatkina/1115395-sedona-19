@@ -1,6 +1,23 @@
-.page-catalog__wrapper {
+.page-catalog {
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
+    padding-bottom: 31px;
+    background-color: white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 38px;
+  }
+}
+
+.page-catalog__wrapper {
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 

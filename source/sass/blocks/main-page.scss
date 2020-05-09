@@ -1,31 +1,37 @@
 .main-page {
+  background-color: $blue-bg;
+}
+
+.main-page__header {
   @include bg-img("bg-back-mobile@1x.jpg");
   background-position: top -1px right -224px;
   background-size: auto;
   padding-top: 90px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
     @include bg-img("bg-back-mobile@2x.jpg");
     background-size: 768px auto;
     background-position: -225px 0;
+    padding-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    @include bg-img("bg-back-tablet@1x.jpg");
-    background-position: top center;
-    padding-top: 77px;
+    @media (min-width: $tablet-width) {
+      @include bg-img("bg-back-tablet@1x.jpg");
+      background-position: top center;
+      padding-top: 77px;
 
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      @include bg-img("bg-back-tablet@2x.jpg");
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        @include bg-img("bg-back-tablet@2x.jpg");
+      }
     }
-  }
 
   @media (min-width: $desktop-width) {
     @include bg-img("bg-back-desktop@1x.jpg");
     background-size: 1200px auto;
+    padding-bottom: 0;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -34,27 +40,15 @@
   }
 }
 
-.main-page__header {
-  padding-bottom: 42px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
-  }
-}
-
 .main-page__img {
-  padding-bottom: 125px;
+  padding-bottom: 85px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 460px;
     height: auto;
     margin: 0 auto;
-    padding-bottom: 143px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,27 +57,28 @@
 }
 
 .main-page__title-wrapper {
-  padding: 0 30px;
   position: relative;
+  background-color:$white;
+  padding: 41px 30px 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 120px;
+    padding: 52px 120px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 335px 10px;
+    padding: 53px 335px 50px;
   }
 }
 
 .triangle::before {
   content: url("../img/bg-intro-triangle-mobile.svg");
   position: absolute;
-  top: -65px;
+  top: -26px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     content: url("../img/bg-intro-triangle-tablet.svg");
-    top: -108px;
+    top: -56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -53px;
+    top: -57px;
     left: calc(50% - 600px);
   }
 }
@@ -109,7 +104,7 @@
 .main-page__title-wrapper::after {
   content: url("../img/bg-triangle.svg");
   position: absolute;
-  bottom: -48px;
+  bottom: -21px;
   left: 0;
 
   @media (min-width: $tablet-width) {
