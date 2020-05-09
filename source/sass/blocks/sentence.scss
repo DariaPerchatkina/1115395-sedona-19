@@ -1,3 +1,8 @@
+.sentence {
+  background-color: $white;
+  padding-bottom: 10px;
+}
+
 .sentence__wrapper {
   padding: 24px 20px 50px 20px;
 
@@ -61,6 +66,13 @@
 
 .sentence__picture {
   position: relative;
+}
+
+.sentence__iframe {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
 }
 
 .sentence__picture::before {

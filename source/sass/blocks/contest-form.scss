@@ -1,16 +1,19 @@
 .contest-form {
+  background-color: white;
   border-top: 1px solid $bh-gray;
+  padding-bottom: 48px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 36px 60px 0;
+    padding: 31px 60px 68px;
+    padding-bottom: 68px;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 11px 120px 0;
+    padding: 15px 120px 66px;
     border: none;
   }
 }
@@ -48,7 +51,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     width: 1px;
-    height: calc(100% - 21px - 67px);
+    height: calc(100% - 21px - 50px);
     background-color: $disabled-gray;
     position: absolute;
     top: 21px;
@@ -68,7 +71,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
     width: 50%;
-    padding-bottom: 71px;
+    padding-bottom: 51px;
   }
 }
 
@@ -76,15 +79,12 @@
   @media (min-width: $tablet-width) {
     order: 3;
     flex-grow: 1;
-    border-top: 1px solid $disabled-gray;
-    padding-bottom: 47px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    padding-bottom: 22px;
+    padding-bottom: 44px;
   }
 }
 
@@ -92,8 +92,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     order: 4;
-    border-top: 1px solid $disabled-gray;
-    padding-bottom: 33px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,14 +148,12 @@
   @media (min-width: $tablet-width) {
     order: 5;
     flex-grow: 1;
-    padding-bottom: 50px;
-    border-top: 1px solid $disabled-gray;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-top: 32px;
-    border-top: 1px solid $disabled-gray;
+    margin-top: 20px;
   }
 }
 
@@ -203,7 +200,7 @@
   height: 58px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.44;
+  line-height: 58px;
   text-align: left;
   color: $black;
   background-color: $bh-gray;
@@ -305,7 +302,7 @@
   display: none;
   position: absolute;
   left: 17px;
-  top: 17px;
+  top: 20px;
   width: 22px;
   height: 13px;
   border-bottom: 4px solid $black;
@@ -321,11 +318,13 @@
   background-color: $bh-gray;
   color: $black;
   padding: 14px 20px;
+  padding-top: 16px;
   line-height: 1.4;
 
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
+    padding-top: 14px;
     padding-left: 18px;
+    padding-bottom: 11px;
     width: 100%;
   }
 }
@@ -356,7 +355,7 @@
     display: block;
     font-size: 14px;
     font-weight: 400;
-    padding-top: 17px;
+    padding-top: 19px;
     line-height: 1.86;
     order: 7;
     flex-grow: 1;
@@ -497,15 +496,54 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
-    padding-top: 0;
-    padding-left: 60px;
-    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
-    padding-left: 48px;
+  }
+}
+
+.contest-form__legend--inner::before,
+.label-textarea::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 1px;
+    left: calc(100% - 465px);
+    bottom: 40px;
+    background-color: $disabled-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    left: calc(100% - 608px);
+  }
+}
+
+.contest-form__legend--inner::after,
+.label-textarea::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 1px;
+    right: calc(100% - 465px);
+    bottom: 40px;
+    background-color: $disabled-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    right: calc(100% - 608px);
   }
 }
 
@@ -514,16 +552,58 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
-    padding: 5px 60px 0 60px;
-    width: 278px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 39px;
-    padding-bottom: 42px;
-    padding-right: 68px;
-    margin-bottom: 0;
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-bottom: 27px;
+  }
+}
+
+.contest-form__legend--checkbox::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 1px;
+    left: calc(100% - 648px);
+    bottom: 68px;
+    background-color: $disabled-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    left: calc(100% - 958px);
+    bottom: 70px;
+  }
+}
+
+.contest-form__legend--checkbox::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 1px;
+    right: calc(100% - 648px);
+    bottom: 68px;
+    background-color: $disabled-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    right: calc(100% - 958px);
+    bottom: 70px;
   }
 }
 
@@ -532,15 +612,42 @@
   padding-top: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
-    padding-left: 66px;
-    padding-right: 75px;
-    margin: 0;
-    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 3px;
+    padding-bottom: 46px;
+  }
+}
+
+.label-textarea::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    left: calc(100% - 569px);
+    bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 60px;
+  }
+}
+
+.label-textarea::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    right: calc(100% - 569px);
+    bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 60px;
   }
 }
 
