@@ -84,7 +84,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-bottom: 44px;
+    padding-bottom: 46px;
   }
 }
 
@@ -505,12 +505,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
   }
 }
 
-.contest-form__legend--inner::before,
-.label-textarea::before {
+.contest-form__legend--inner::before {
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -528,8 +527,7 @@
   }
 }
 
-.contest-form__legend--inner::after,
-.label-textarea::after {
+.contest-form__legend--inner::after {
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -565,7 +563,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 280px;
     padding-right: 280px;
-    margin-bottom: 27px;
   }
 }
 
@@ -630,24 +627,39 @@
 .label-textarea::before {
   @media (min-width: $tablet-width) {
     content: "";
+    position: absolute;
     left: calc(100% - 569px);
-    bottom: 61px;
+    display: block;
+    width: 125px;
+    height: 1px;
+    // left: calc(100% - 465px);
+    bottom: 40px;
+    background-color: $disabled-gray;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 60px;
+    bottom: 63px;
+    width: 280px;
+    left: calc(100% - 725px);
   }
 }
 
 .label-textarea::after {
   @media (min-width: $tablet-width) {
     content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 1px;
     right: calc(100% - 569px);
     bottom: 61px;
+    background-color: $disabled-gray;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 60px;
+    width: 280px;
+    right: calc(100% - 725px);
+    bottom: 63px;
   }
 }
 
