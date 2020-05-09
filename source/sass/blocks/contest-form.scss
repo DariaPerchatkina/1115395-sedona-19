@@ -517,7 +517,6 @@
     display: block;
     width: 125px;
     height: 1px;
-    background-color: #dbdbdb;
     left: calc(100% - 465px);
     bottom: 40px;
     background-color: $disabled-gray;
@@ -537,7 +536,6 @@
     display: block;
     width: 125px;
     height: 1px;
-    background-color: #dbdbdb;
     right: calc(100% - 465px);
     bottom: 40px;
     background-color: $disabled-gray;
@@ -634,7 +632,7 @@
     content: "";
     left: calc(100% - 569px);
     bottom: 61px;
-}
+  }
 
   @media (min-width: $desktop-width) {
     bottom: 60px;
@@ -646,7 +644,7 @@
     content: "";
     right: calc(100% - 569px);
     bottom: 61px;
-}
+  }
 
   @media (min-width: $desktop-width) {
     bottom: 60px;
