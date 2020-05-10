@@ -37,7 +37,7 @@ gulp.task("css", function () {
 gulp.task("compress", function () {
   return gulp.src("source/**/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("html", function () {
