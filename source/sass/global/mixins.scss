@@ -2,3 +2,18 @@
   background-image: url("../img/#{$img}");
   background-repeat: $repeat;
 }
+
+@mixin legend-pseudo-element($position, $display, $height, $background-color) {
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: $disabled-gray;
+}
+
+@mixin legend ($display, $justify-content, $align-items, $position, $margin) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
