@@ -15,6 +15,8 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -24,6 +26,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -31,14 +34,23 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("compress", function () {
+  return gulp.src("source/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build"));
+});
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
+
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/*.svg")
@@ -49,11 +61,15 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -61,7 +77,9 @@ gulp.task("images", function() {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 70}))
+    .pipe(webp({
+      quality: 70
+    }))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -71,13 +89,12 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
-    "source/*.ico"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+      "source/fonts/**/*.{woff,woff2}",
+      "source/*.ico"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", gulp.series(
@@ -87,6 +104,7 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "html",
+  "compress",
   "copy"
 ));
 

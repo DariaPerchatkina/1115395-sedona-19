@@ -3,27 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона - форма отзыва</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous"  type="font/woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"  type="font/woff2">
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.min.js" async=""></script>
-  <link  rel = "apple-touch-icon"  sizes = "57x57"  href = "/apple-icon-57x57.png" >
-  <link  rel = "apple-touch-icon"  sizes = "60x60"  href = "/ apple -icon-60x60.png " >
-  <link  rel = " apple-touch-icon "  sizes = " 72x72 "  href = " /apple-icon-72x72.png " >
-  <link  rel = " apple-touch-icon "  размеры = "76x76"  href = "/apple-icon-76x76.png" >
-  <link  rel = "apple-touch-icon "  sizes = " 114x114 "  href = " /apple-icon-114x114.png ">
-  <link  rel = "apple-touch-icon"  sizes = "120x120"  href = "/apple-icon-120x120.png" >
-  <link  rel = "apple-touch-icon"  sizes = "144x144"  href = "/ apple-icon-144x144.png " >
-  <link  rel = " apple-touch-icon "  sizes = " 152x152 "  href = " /apple-icon-152x152.png " >
-  <link  rel = " apple-touch-icon "  размеры = "180x180"  href = "/apple-icon-180x180.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "192x192"  href = "/android-icon-192x192.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "32x32"  href = "/favicon-32x32.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "96x96"  href = "/favicon-96x96.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "16x16"  href = "/ favicon-16x16. png " >
-  <link  rel = " manifest " href = "/manifest.json" >
-  <meta  name ="msapplication-TileColor"  content = "#ffffff" >
-  <meta  name = "msapplication-TileImage"  content = "/ms-icon-144x144.png" >
-  <meta  name = "theme-color"  content = "#ffffff" >
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -69,7 +55,8 @@
       <img class="inner-page__img" src="img/text-sedona.svg" width="229" height="39" alt="Логотип последующие">
       <div class="inner-page__title-wrapper inner-page__title-wrapper--form  triangle triangle--inner">
         <h2 class="inner-page__title text">Оставьте свой отзыв</h2>
-        <p class="inner-page__intro inner-page__intro--form text"> Помогите нашим отелям стать лучше!Оставьте отзыв о них,&nbsp;
+        <p class="inner-page__intro inner-page__intro--form text"> Помогите нашим отелям стать лучше!Оставьте отзыв о
+          них,&nbsp;
           &nbsp;а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="contest-form" action="https://echo.htmlacademy.ru/">
@@ -78,17 +65,20 @@
           <ul class="contest-form__list contest-form__list--main list">
             <li class="contest-form__item">
               <label class="contest-form__label text" for="appointment-family">Имя*:
-                <input class="contest-form__input contest-form__input--main" id="appointment-family" type="text" name="family" placeholder="Петр" required="">
+                <input class="contest-form__input contest-form__input--main" id="appointment-family" type="text"
+                  name="family" placeholder="Петр" required="">
               </label>
             </li>
             <li class="contest-form__item">
               <label class="contest-form__label text" for="appointment-name">Фамилия*:
-                <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text" name="name" placeholder="Иванов" required="">
+                <input class="contest-form__input contest-form__input--main" id="appointment-name" type="text"
+                  name="name" placeholder="Иванов" required="">
               </label>
             </li>
             <li class="contest-form__item">
               <label class="contest-form__label text" for="appointment-patronymic">Отчество:
-                <input class="contest-form__input contest-form__input--main" id="appointment-patronymic" type="text" name="patronymic" placeholder="Александрович">
+                <input class="contest-form__input contest-form__input--main" id="appointment-patronymic" type="text"
+                  name="patronymic" placeholder="Александрович">
               </label>
             </li>
           </ul>
@@ -97,15 +87,19 @@
           <legend class="contest-form__legend contest-form__legend--inner text">Контактная информация:</legend>
           <ul class="contest-form__list contest-form__list--inner list">
             <li class="contest-form__item contest-form__item--inner contest-form__item--phone">
-              <label class="contest-form__label contest-form__label--inner contest-form__label--phone text" for="appointment-tel"><span class="contest-form__phone-span">Контактный</span>
+              <label class="contest-form__label contest-form__label--inner contest-form__label--phone text"
+                for="appointment-tel"><span class="contest-form__phone-span">Контактный</span>
                 телефон*:
-                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="tel" name="tel" placeholder="Введите телефон" required="">
+                <input class="contest-form__input contest-form__input--inner" id="appointment-tel" type="tel" name="tel"
+                  placeholder="Введите телефон" required="">
               </label>
             </li>
             <li class="contest-form__item contest-form__item--inner contest-form__item--email">
-              <label class="contest-form__label contest-form__label--inner contest-form__label--email text" for="appointment-email">Электронная
+              <label class="contest-form__label contest-form__label--inner contest-form__label--email text"
+                for="appointment-email">Электронная
                 почта*:
-                <input class="contest-form__input contest-form__input--inner" id="appointment-email" type="email" name="email" placeholder="Введите e-mail" required="">
+                <input class="contest-form__input contest-form__input--inner" id="appointment-email" type="email"
+                  name="email" placeholder="Введите e-mail" required="">
               </label>
             </li>
           </ul>
@@ -114,19 +108,22 @@
           <legend class="contest-form__legend contest-form__legend--radio text">Ваше общее впечатление:</legend>
           <ul class="contest-form__list  contest-form__list--radio list">
             <li class="contest-form__item contest-form__item--radio">
-              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system" id="positive" checked="">
+              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system"
+                id="positive" checked="">
               <label class="contest-form__label contest-form__label--radio" for="positive">
                 Скорее положительное
               </label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
-              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system" id="negative">
+              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system"
+                id="negative">
               <label class="contest-form__label contest-form__label--radio" for="negative">
                 Скорее отрицательное
               </label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
-              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system" id="neutral">
+              <input class="visually-hidden contest-form__input contest-form__input--radio" type="radio" name="system"
+                id="neutral">
               <label class="contest-form__label contest-form__label--radio" for="neutral">
                 Затрудняюсь ответить
               </label>
@@ -138,22 +135,26 @@
           </legend>
           <ul class="contest-form__list contest-form__list--checkbox list">
             <li class="contest-form__item contest-form__item--filter">
-              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="devil's bridge" id="form-devil's-bridge" type="checkbox" checked="">
+              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="devil's bridge"
+                id="form-devil's-bridge" type="checkbox" checked="">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-devil's-bridge">Мост Дьявола
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="bell mountain" id="form-bell-mountain" type="checkbox" checked="">
+              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="bell mountain"
+                id="form-bell-mountain" type="checkbox" checked="">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-bell-mountain">Гора-Колокол
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="slide-park" id="form-slide-park" type="checkbox" checked="">
+              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="slide-park"
+                id="form-slide-park" type="checkbox" checked="">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-slide-park">Слайд-парк
               </label>
             </li>
             <li class="contest-form__item contest-form__item--filter">
-              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="red-rocks" id="form-red-rocks" type="checkbox">
+              <input class="visually-hidden contest-form__input contest-form__input--checkbox" name="red-rocks"
+                id="form-red-rocks" type="checkbox">
               <label class="contest-form__label  contest-form__label--checkbox" for="form-red-rocks">Красные скалы
               </label>
             </li>
@@ -163,7 +164,8 @@
           <legend class="contest-form__legend label-textarea text">Опишите свои
             эмоции: </legend>
           <label class="visually-hidden" for="form-textarea">Ваш отзыв</label>
-          <textarea class="contest-form__textarea" rows="6" cols="29" name="text" id="form-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="contest-form__textarea" rows="6" cols="29" name="text" id="form-textarea"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="contest-form__button btn-style" type="submit">Отправить отзыв</button>
         <span class="contest-form__span text">* — обязательные поля</span>
@@ -176,7 +178,7 @@
     <div class="footer-social">
       <ul class="footer-social__list list">
         <li class="footer-social__item">
-          <a class="footer-social__link link" >
+          <a class="footer-social__link link">
             <span class="visually-hidden">twitter</span>
             <svg class="footer-social__icon" width="18" height="15">
               <use xlink:href="#icon-twitter"></use>
@@ -208,9 +210,10 @@
         <use xlink:href="#icon-htmlacademy"></use>
       </svg>
     </a>
-</footer>
+  </footer>
 
-  <section class="modal"> <!-- класс modal-show покажет модальное окно-->
+  <section class="modal">
+    <!-- класс modal-show покажет модальное окно-->
     <div class="modal__container container">
       <h3 class="modal__title">Что-то пошло не так!</h3>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -218,7 +221,8 @@
     </div>
   </section>
 
-  <section class="modal">   <!-- класс modal-show__seconde покажет модальное окно-->
+  <section class="modal">
+    <!-- класс modal-show__seconde покажет модальное окно-->
     <div class="modal__container modal__container--second container">
       <h3 class="modal__title">Ваш отзыв отправлен!</h3>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.

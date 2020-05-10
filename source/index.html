@@ -3,26 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous"  type="font/woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"  type="font/woff2">
   <link href="css/style.min.css" rel="stylesheet">
-  <link  rel = "apple-touch-icon"  sizes = "57x57"  href = "/apple-icon-57x57.png" >
-  <link  rel = "apple-touch-icon"  sizes = "60x60"  href = "/ apple -icon-60x60.png " >
-  <link  rel = " apple-touch-icon "  sizes = " 72x72 "  href = " /apple-icon-72x72.png " >
-  <link  rel = " apple-touch-icon "  размеры = "76x76"  href = "/apple-icon-76x76.png" >
-  <link  rel = "apple-touch-icon "  sizes = " 114x114 "  href = " /apple-icon-114x114.png ">
-  <link  rel = "apple-touch-icon"  sizes = "120x120"  href = "/apple-icon-120x120.png" >
-  <link  rel = "apple-touch-icon"  sizes = "144x144"  href = "/ apple-icon-144x144.png " >
-  <link  rel = " apple-touch-icon "  sizes = " 152x152 "  href = " /apple-icon-152x152.png " >
-  <link  rel = " apple-touch-icon "  размеры = "180x180"  href = "/apple-icon-180x180.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "192x192"  href = "/android-icon-192x192.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "32x32"  href = "/favicon-32x32.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "96x96"  href = "/favicon-96x96.png" >
-  <link  rel = "icon"  type = "image / png"  sizes = "16x16"  href = "/ favicon-16x16. png " >
-  <link  rel = " manifest " href = "/manifest.json" >
-  <meta  name ="msapplication-TileColor"  content = "#ffffff" >
-  <meta  name = "msapplication-TileImage"  content = "/ms-icon-144x144.png" >
-  <meta  name = "theme-color"  content = "#ffffff" >
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script src="js/picturefill.min.js" async=""></script>
 </head>
 
@@ -56,7 +42,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Путешествие в Седону">
+            <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="83"
+              alt="Путешествие в Седону">
           </picture>
         </a>
       </div>
@@ -67,7 +54,8 @@
     <section class="main-page__header">
       <img class="main-page__img" src="img/text-sedona-index.svg" width="280" height="389" alt="Логотип главной">
       <div class="main-page__title-wrapper triangle">
-        <h1 class="main-page__title text">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+        <h1 class="main-page__title text">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!
+        </h1>
         <p class="main-page__intro text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
     </section>
@@ -81,13 +69,17 @@
             <p class="advantages__description text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" type="image/webp" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+            <source media="(min-width: 1200px)" type="image/webp"
+              srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-            <img class="advantages__img advantages__img--poly" src="img/main-city-mobile@1x.jpg" width="320" height="260" srcset="img/main-city-mobile@2x.jpg 2x" alt="Седона">
+            <img class="advantages__img advantages__img--poly" src="img/main-city-mobile@1x.jpg" width="320"
+              height="260" srcset="img/main-city-mobile@2x.jpg 2x" alt="Седона">
           </picture>
           <div class="applications">
             <ul class="applications__list list">
@@ -97,7 +89,8 @@
               </li>
               <li class="applications__item applications__item--souvenirs">
                 <h3 class="applications__title text">Сувениры</h3>
-                <p class="applications__description applications__description--souvenirs text">Не только китайского,<br class="applications__line-breake"> но и местного производства!</p>
+                <p class="applications__description applications__description--souvenirs text">Не только китайского,<br
+                    class="applications__line-breake"> но и местного производства!</p>
               </li>
               <li class="applications__item applications__item--food">
                 <h3 class="applications__title text">Еда</h3>
@@ -113,13 +106,18 @@
             <p class="advantages__description text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" type="image/webp" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+            <source media="(min-width: 1200px)" type="image/webp"
+              srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-            <img class="advantages__img advantages__img--poly" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+            <source media="(min-width: 1200px)"
+              srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img class="advantages__img advantages__img--poly" src="img/main-bridge-mobile@1x.jpg" width="320"
+              height="260" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
           </picture>
         </li>
         <li class="advantages__item  advantages__item--inner">
@@ -141,7 +139,7 @@
           <span class="advantages__number">— №5 —</span>
           <p class="advantages__description text advantages__description--inner advantages__description--tourists">
             Большинство едет в Гранд-Каньон и
-              толпится там</p>
+            толпится там</p>
         </li>
       </ol>
     </section>
@@ -153,12 +151,17 @@
           вам лучшие предложения
           гостиниц
           в Седоне</p>
-        <a class="sentence__link link btn-style" href="search.html" aria-label="Переход к поиску гостиниц">Найти гостиницу</a>
+        <a class="sentence__link link btn-style" href="search.html" aria-label="Переход к поиску гостиниц">Найти
+          гостиницу</a>
       </div>
-      <iframe class="sentence__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838266.2100705556!2d-112.16712931132818!3d34.84423037097855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1588974841092!5m2!1sru!2sua" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="sentence__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838266.2100705556!2d-112.16712931132818!3d34.84423037097855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1588974841092!5m2!1sru!2sua"
+        height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <picture class="sentence__picture">
-        <source media="(min-width: 1200px)" type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-        <source media="(min-width: 768px)" type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source media="(min-width: 1200px)" type="image/webp"
+          srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" type="image/webp"
+          srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
         <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
@@ -212,6 +215,7 @@
   <script src="js/object-fit-images.min.js"></script>
   <script>
     objectFitImages("img.advantages__img--poly");
+
   </script>
 
 </body>
