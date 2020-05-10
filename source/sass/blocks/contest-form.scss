@@ -497,6 +497,7 @@
 
   @media (min-width: $tablet-width) {
     @include legend(flex, space-between, center, relative, 0 auto);
+
     padding-bottom: 27px;
   }
 
@@ -508,10 +509,11 @@
 .contest-form__legend--inner::before {
   @media (min-width: $tablet-width) {
     content: "";
-    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
     width: 125px;
     left: calc(100% - 465px);
     bottom: 40px;
+
+    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {
@@ -523,10 +525,11 @@
 .contest-form__legend--inner::after {
   @media (min-width: $tablet-width) {
     content: "";
-    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
     width: 125px;
     right: calc(100% - 465px);
     bottom: 40px;
+
+    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {
@@ -540,10 +543,11 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    @include legend(flex, space-between, center, relative, 0 auto);
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 40px;
+
+    @include legend(flex, space-between, center, relative, 0 auto);
   }
 
   @media (min-width: $desktop-width) {
@@ -555,10 +559,11 @@
 .contest-form__legend--checkbox::before {
   @media (min-width: $tablet-width) {
     content: "";
-    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
     width: 125px;
     left: calc(100% - 648px);
     bottom: 68px;
+
+    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {
@@ -571,10 +576,11 @@
 .contest-form__legend--checkbox::after {
   @media (min-width: $tablet-width) {
     content: "";
-    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
     width: 125px;
     right: calc(100% - 648px);
     bottom: 68px;
+
+    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {
@@ -589,10 +595,11 @@
   padding-top: 16px;
 
   @media (min-width: $tablet-width) {
-    @include legend(flex, space-between, center, relative, 0 auto);
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 46px;
+
+    @include legend(flex, space-between, center, relative, 0 auto);
   }
 
   @media (min-width: $desktop-width) {
@@ -603,10 +610,11 @@
 .label-textarea::before {
   @media (min-width: $tablet-width) {
     content: "";
-    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
     left: calc(100% - 569px);
     width: 125px;
     bottom: 40px;
+
+    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {
@@ -619,10 +627,11 @@
 .label-textarea::after {
   @media (min-width: $tablet-width) {
     content: "";
-    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
     width: 125px;
     right: calc(100% - 569px);
     bottom: 61px;
+
+    @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {

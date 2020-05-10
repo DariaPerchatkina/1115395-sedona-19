@@ -41,11 +41,11 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task("compress", function () {
+gulp.task('compress', function () {
   return pipeline(
-        gulp.src("source/js/*.js"),
+        gulp.src('source/*.js'),
         uglify(),
-        gulp.dest("dist")
+        gulp.dest('build/js')
   );
 });
 
