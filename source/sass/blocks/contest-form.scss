@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 120px 66px;
+    padding: 15px 120px 74px;
     border: none;
   }
 }
@@ -324,11 +324,12 @@
   @media (min-width: $tablet-width) {
     padding-left: 18px;
     padding-bottom: 11px;
+    padding-top: 14px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 12px;
+    padding-top: 16px;
   }
 }
 
@@ -502,7 +503,8 @@
   @media (min-width: $tablet-width) {
     @include legend(flex, space-between, center, relative, 0 auto);
 
-    padding-bottom: 27px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {

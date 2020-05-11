@@ -1,6 +1,6 @@
-.main-page {
-  background-color: $blue-bg;
-}
+// .main-page {
+//   background-color: $blue-bg;
+// }
 
 .main-page__header {
   @include bg-img("bg-back-mobile@1x.jpg");
@@ -8,6 +8,7 @@
   background-size: auto;
   padding-top: 90px;
   padding-bottom: 14px;
+  background-color: $blue-bg;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {

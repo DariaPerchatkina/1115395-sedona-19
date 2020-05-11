@@ -1,8 +1,11 @@
+.inner-page {
+  background-color: $brown;
+}
+
 .inner-page__header {
   @include bg-img("bg-back-mobile@1x.jpg");
   background-position: top -232px right -224px;
   background-size: auto;
-  background-color: $brown;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -87,7 +90,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 }
 
