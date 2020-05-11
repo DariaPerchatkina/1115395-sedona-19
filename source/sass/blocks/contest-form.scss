@@ -271,8 +271,8 @@
   background-color: $hover-gray;
 }
 
-.contest-form__input--checkbox:disabled + .contest-form__label--checkbox::before,
-.contest-form__input--radio:disabled + label::before {
+.contest-form__input--checkbox:active + .contest-form__label--checkbox::before,
+.contest-form__input--radio:active + label::before {
   background-color: $disabled-gray;
 }
 
@@ -322,10 +322,13 @@
   line-height: 1.4;
 
   @media (min-width: $tablet-width) {
-    padding-top: 14px;
     padding-left: 18px;
     padding-bottom: 11px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
   }
 }
 
@@ -345,6 +348,7 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    padding: 18px 75px 21px 74px;
   }
 }
 
@@ -603,7 +607,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 46px;
+    padding: 14px 124px 46px 120px;
   }
 }
 
@@ -612,13 +616,12 @@
     content: "";
     left: calc(100% - 569px);
     width: 125px;
-    bottom: 40px;
+    bottom: 61px;
 
     @include legend-pseudo-element(absolute, block, 1px, $disabled-gray);
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 63px;
     width: 280px;
     left: calc(100% - 725px);
   }
@@ -637,7 +640,6 @@
   @media (min-width: $desktop-width) {
     width: 280px;
     right: calc(100% - 725px);
-    bottom: 63px;
   }
 }
 

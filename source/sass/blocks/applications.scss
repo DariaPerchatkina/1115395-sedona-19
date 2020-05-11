@@ -1,21 +1,17 @@
 .applications {
-  padding-top: 35px;
-  padding-right: 30px;
-  padding-left: 70px;
-  padding-bottom: 11px;
+  padding: 33px 30px 9px 70px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0;
-    padding-bottom: 34px;
+    padding: 0 0 30px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 20px 54px;
+    padding: 60px 20px 53px;
   }
 }
 
@@ -57,7 +53,7 @@
 }
 
 .applications__item {
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   text-align: left;
   position: relative;
 
@@ -194,7 +190,7 @@
 .applications__line-breake {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

@@ -1,6 +1,5 @@
 .advantages {
   background-color: $header-bg;
-  margin-top: -15px;
   padding-top: 15px;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +26,7 @@
   line-height: 1.5;
   background-color: $header-bg;
   color: $white;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -34,18 +34,19 @@
   }
 
   @media (min-width: $desktop-width) {
+    // min-height: 135px;
     width: 100%;
     background-color: $white;
   }
 }
 
 .advantages__wrapper {
-  padding: 39px 27px 40px;
+  padding: 38px 27px 40px;
 
   @media (min-width: $tablet-width) {
     max-width: 256px;
     min-height: 256px;
-    padding: 44px 27px 20px;
+    padding: 46px 27px 20px;
     flex-grow: 1;
   }
 
@@ -57,7 +58,7 @@
 }
 
 .advantages__wrapper--inner {
-  padding-bottom: 37px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -65,7 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 90px 30px 90px;
+    padding: 52px 90px 30px;
   }
 }
 
@@ -81,15 +82,14 @@
     flex-wrap: nowrap;
     align-items: center;
     max-width: 256px;
-    height: 256px;
     text-align: center;
     padding-top: 44px;
-    padding-bottom: 34px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 400px;
-    padding: 45px 25px 57px;
+    padding: 43px 25px 42px;
   }
 }
 
@@ -104,13 +104,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 35px;
+    line-height: 25px;
   }
 }
 
 .advantages__title--inner {
+  @media (min-width: $tablet-width) {
+    line-height: 27px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 100px;
+    margin-bottom: 10px;
   }
 }
 
@@ -128,8 +133,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-top: 20px;
+    padding: 24px 0 0;
   }
 }
 
@@ -142,7 +146,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 24px;
+    padding-top: 20px;
   }
 }
 
@@ -206,3 +210,11 @@
   font-family: "object-fit: cover";
 }
 /* stylelint-enable */
+
+.advantages__line-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

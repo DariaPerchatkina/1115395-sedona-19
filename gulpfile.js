@@ -10,7 +10,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
+// var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -75,13 +75,13 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({
-      quality: 70
-    }))
-    .pipe(gulp.dest("build/img"));
-});
+// gulp.task("webp", function () {
+//   return gulp.src("source/img/**/*.{png,jpg}")
+//     .pipe(webp({
+//       quality: 70
+//     }))
+//     .pipe(gulp.dest("build/img"));
+// });
 
 gulp.task("clean", function () {
   return del("build");
@@ -102,7 +102,7 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "images",
-  "webp",
+  // "webp",
   "html",
   "compress",
   "copy"

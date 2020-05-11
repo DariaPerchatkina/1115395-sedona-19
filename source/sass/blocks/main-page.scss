@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 335px 50px;
+    padding: 51px 335px 50px;
   }
 }
 
@@ -84,6 +84,7 @@
   @media (min-width: $desktop-width) {
     content: url("../img/bg-intro-triangle-desktop.svg");
     top: -56px;
+    transform: scale(1.001);
   }
 }
 
@@ -104,6 +105,7 @@
 .main-page__title-wrapper::after {
   content: url("../img/bg-triangle.svg");
   position: absolute;
+  transform: scale(1.001);
   bottom: -21px;
   left: 0;
 
@@ -126,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    line-height: 1.19;
+    line-height: 25px;
     padding-bottom: 31px;
   }
 }
