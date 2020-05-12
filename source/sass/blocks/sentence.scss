@@ -1,6 +1,10 @@
 .sentence {
   background-color: $white;
   padding-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .sentence__wrapper {

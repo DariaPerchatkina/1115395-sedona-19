@@ -50,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 400px;
+    min-height: 256px;
     padding: 52px 65px 55px 65px;
     background-color: $header-bg;
   }
@@ -104,6 +105,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 25px;
+    padding: 0 25px;
   }
 }
 
