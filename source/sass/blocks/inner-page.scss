@@ -1,8 +1,11 @@
+.inner-page {
+  background-color: $brown;
+}
+
 .inner-page__header {
   @include bg-img("bg-back-mobile@1x.jpg");
   background-position: top -232px right -224px;
   background-size: auto;
-  background-color: $brown;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -54,14 +57,14 @@
 .inner-page__title-wrapper {
   background-color: $white;
   position: relative;
-  padding: 39px 20px 28px 20px;
+  padding: 39px 20px 30px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 67px 160px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 103px 370px 69px;
+    padding: 101px 370px 71px;
   }
 }
 
@@ -70,11 +73,11 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 67px 160px 25px;
+    padding: 67px 155px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 103px 365px 25px;
+    padding: 103px 365px 27px;
   }
 }
 
@@ -82,12 +85,17 @@
   font-size: 18px;
   font-weight: 700;
   color: $black;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
   line-height: 1.44;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
+    line-height: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 22px;
   }
 }
 
@@ -97,8 +105,20 @@
   color: $light-black;
   padding: 0 5px;
   line-height: 1.71;
+
+  @media (min-width: $desktop-width) {
+    line-height: 23px;
+  }
 }
 
 .inner-page__intro--form {
   padding: 0;
+}
+
+.inner-page__line-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

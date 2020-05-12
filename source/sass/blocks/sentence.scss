@@ -1,18 +1,22 @@
 .sentence {
   background-color: $white;
   padding-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .sentence__wrapper {
   padding: 24px 20px 50px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 53px 157px 57px 157px;
+    padding: 56px 155px 57px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 54px 370px 66px 370px;
+    padding: 55px 371px 66px;
   }
 }
 
@@ -25,28 +29,29 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 0.87;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 33px;
+    padding-bottom: 30px;
   }
 }
 
 .sentence__description {
-  padding-bottom: 38px;
+  padding-bottom: 36px;
   font-size: 14px;
   font-weight: 400;
   color: $light-black;
-  line-height: 1.6;
+  line-height: 23px;
 
   @media (min-width: $tablet-width) {
     line-height: 1.71;
-    padding-bottom: 43px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 48px;
+    line-height: 24px;
   }
 }
 

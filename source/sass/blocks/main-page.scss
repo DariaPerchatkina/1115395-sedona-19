@@ -1,13 +1,9 @@
-.main-page {
-  background-color: $blue-bg;
-}
-
 .main-page__header {
   @include bg-img("bg-back-mobile@1x.jpg");
   background-position: top -1px right -224px;
   background-size: auto;
   padding-top: 90px;
-  padding-bottom: 14px;
+  background-color: $blue-bg;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -21,6 +17,7 @@
     @include bg-img("bg-back-tablet@1x.jpg");
     background-position: top center;
     padding-top: 77px;
+    padding-bottom: 0;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -66,14 +63,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 335px 50px;
+    padding: 51px 335px 50px;
   }
 }
 
 .triangle::before {
   content: url("../img/bg-intro-triangle-mobile.svg");
   position: absolute;
-  top: -26px;
+  top: -25px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -83,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     content: url("../img/bg-intro-triangle-desktop.svg");
-    top: -56px;
+    transform: scale(1.001);
   }
 }
 
@@ -96,7 +93,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -57px;
     left: calc(50% - 600px);
   }
 }
@@ -104,6 +100,7 @@
 .main-page__title-wrapper::after {
   content: url("../img/bg-triangle.svg");
   position: absolute;
+  transform: scale(1.001);
   bottom: -21px;
   left: 0;
 
@@ -126,7 +123,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    line-height: 1.19;
+    line-height: 25px;
     padding-bottom: 31px;
   }
 }
