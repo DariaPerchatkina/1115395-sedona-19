@@ -1,5 +1,5 @@
 .presentation {
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 41px;
   background-color: $white;
 
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 23px;
+    padding-top: 22px;
     padding-bottom: 97px;
   }
 }
@@ -18,7 +18,7 @@
   font-size: 18px;
   font-weight: 700;
   color: $black;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -63,11 +63,11 @@
 
 .presentation__toggle {
   position: relative;
-  top: 10px;
+  top: 8px;
   right: 78px;
   border: none;
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: $white;
   padding: 0;
@@ -142,7 +142,7 @@
   @media (min-width: $desktop-width) {
     left: calc(50% - 400px);
     height: 92px;
-    bottom: -5px;
+    bottom: -2px;
   }
 }
 

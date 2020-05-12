@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous"  type="font/woff2">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"  type="font/woff2">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous" type="font/woff2">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script src="js/picturefill.min.js" async=""></script>
@@ -64,7 +64,7 @@
       <ol class="advantages__list list">
         <li class="advantages__item ">
           <div class="advantages__wrapper">
-            <h3 class="advantages__title text">Настоящий&nbsp; городок</h3>
+            <h3 class="advantages__title text">Настоящий городок</h3>
             <span class="advantages__number">— №1 —</span>
             <p class="advantages__description text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -90,7 +90,7 @@
               <li class="applications__item applications__item--souvenirs">
                 <h3 class="applications__title text">Сувениры</h3>
                 <p class="applications__description applications__description--souvenirs text">Не только китайского,<br
-                    class="applications__line-breake"> &nbsp;но и местного производства!</p>
+                    class="applications__line-breake">&nbsp;но и местного производства!</p>
               </li>
               <li class="applications__item applications__item--food">
                 <h3 class="applications__title text">Еда</h3>
@@ -101,7 +101,7 @@
         </li>
         <li class="advantages__item ">
           <div class="advantages__wrapper advantages__wrapper--inner">
-            <h3 class="advantages__title text">Там есть <br class="advantages__line-break">&nbsp;мост Дьявола</h3>
+            <h3 class="advantages__title text">Там есть<br class="advantages__line-break">&nbsp;мост Дьявола</h3>
             <span class="advantages__number">— №2 —</span>
             <p class="advantages__description text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
@@ -117,7 +117,8 @@
             <source media="(min-width: 768px)"
               srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
             <img class="advantages__img advantages__img--poly" src="img/main-bridge-mobile@1x.jpg" width="320"
-              height="260" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+              height="260" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x"
+              alt="Мост Дьявола">
           </picture>
         </li>
         <li class="advantages__item  advantages__item--inner">
@@ -156,7 +157,7 @@
       </div>
       <iframe class="sentence__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838266.2100705556!2d-112.16712931132818!3d34.84423037097855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1588974841092!5m2!1sru!2sua"
-        height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <picture class="sentence__picture">
         <source media="(min-width: 1200px)" type="image/webp"
           srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -166,7 +167,8 @@
 
         <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="sentence__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="map">
+        <img class="sentence__map " src="img/bg-map-mobile@1x.jpg"
+          srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="map">
       </picture>
       <span class="visually-hidden"> Карта </span>
     </section>
@@ -215,6 +217,7 @@
   <script src="js/object-fit-images.min.js"></script>
   <script>
     objectFitImages("img.advantages__img--poly");
+
   </script>
 
 </body>
