@@ -270,9 +270,13 @@
   display: block;
 }
 
+
+.contest-form__input--radio:focus + label::before {
+  box-shadow: 0 0 0 2px $hover-gray;
+}
+
 .contest-form__input--checkbox:focus + .contest-form__label--checkbox::before,
 .contest-form__input--checkbox:hover + .contest-form__label--checkbox::before,
-.contest-form__input--radio:focus + label::before,
 .contest-form__input--radio:hover + label::before {
   background-color: $hover-gray;
 }

@@ -72,7 +72,6 @@ input[type="radio"].visually-hidden {
   background-color: $header-bg;
   align-items: center;
   border: none;
-  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 458px;

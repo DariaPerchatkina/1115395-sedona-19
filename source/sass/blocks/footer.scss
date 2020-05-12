@@ -151,6 +151,10 @@
   opacity: 0.3;
 }
 
+.footer-social__link:focus {
+  outline: 2px solid $middle-blue;
+}
+
 .footer-social__icon {
   display: block;
   fill: $white;
