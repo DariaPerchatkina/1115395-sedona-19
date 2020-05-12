@@ -73,7 +73,7 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    padding: 67px 160px 25px;
+    padding: 67px 155px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +91,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
   }
 }
 
