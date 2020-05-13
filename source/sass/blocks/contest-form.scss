@@ -272,7 +272,7 @@
 
 
 .contest-form__input--radio:focus + label::before {
-  box-shadow: 0 0 0 2px $hover-gray;
+  box-shadow: 0 0 0 2px $header-bc;
 }
 
 .contest-form__input--checkbox:focus + .contest-form__label--checkbox::before,
